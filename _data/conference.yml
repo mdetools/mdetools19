@@ -1,44 +1,23 @@
-full_title: Fifth IEEE Workshop on Hot Topics in Web Systems and Technologies
-short_title: Hotweb 2017
-email: hotwebchair@gmail.com
+full_title: Second Workshop on Model-Driven Engineering Tools
+short_title: MDETools'18
+email: mojtaba@cs.queensu.ca
 description: > # this means to ignore newlines until "baseurl:"
   HotWeb is a forum bringing together researchers and practitioners interested 
   in the design, implementation, and evaluation of Internet systems and applications. 
-location: San Jose, CA, 2017
-date: October 17, 2017
-logo_path: ./assets/images/logo2017.jpg
+location: Copenhagen, Denmark
+date: 14-19 October 2018
+logo_path: ./assets/images/MDEtools.png
 slideshow:
   - id: 0
-    image_path: ./assets/images/slideshow/image0.jpg
-    description: San Jose night scene
-    photographer_name: Mike Boening
-    photographer_link: https://www.flickr.com/photos/memoriesbymike/
-    active: True
+    image_path: ./assets/images/slideshow/tools1.png
   - id: 1
-    image_path: ./assets/images/slideshow/image1.jpg
-    description: San Jose Museum of Art
-    photographer_name: Bryan Nabong
-    photographer_link: https://www.flickr.com/photos/bongarang/
+    image_path: ./assets/images/slideshow/tools2.png
   - id: 2
-    image_path: ./assets/images/slideshow/image2.jpg
-    description: San Jose State University
-    photographer_name: David Sawyer
-    photographer_link: https://www.flickr.com/photos/18702768@N04/
+    image_path: ./assets/images/slideshow/tools1.png
   - id: 3
-    image_path: ./assets/images/slideshow/image3.jpg
-    description: Cathedral Basilica of St. Joseph
-    photographer_name: Patricia Montes Gregory
-    photographer_link: https://www.flickr.com/photos/32159045@N02/
+    image_path: ./assets/images/slideshow/tools2.png
   - id: 4
-    image_path: ./assets/images/slideshow/image4.jpg
-    description: Winchester Mystery House
-    photographer_name: Pomax
-    photographer_link: https://www.flickr.com/photos/pomax/
-  - id: 5
-    image_path: ./assets/images/slideshow/image5.jpg
-    description: Rose Garden Branch Library
-    photographer_name: John Menard
-    photographer_link: https://www.flickr.com/photos/jmenard48/
+    image_path: ./assets/images/slideshow/tools1.png
 navbar:
   - id: 0
     label: Home
@@ -63,42 +42,42 @@ navbar:
   - id: 5
     label: Venue
     path: ./venue.html
-    visible: True
+    visible: False
   - id: 6
     label: Registration
     path: ./registration.html
-    visible: True
+    visible: False
 deadlines:
-  - date: 2017-2-17 23:59:59 -0700
+  - date: 2018-6-17 23:59:59 -0700
     timezone: PDT
     text: Submission deadline
-    pass_due: True
-  - date: 2017-4-17 23:59:59 -0700
+    pass_due: False
+  - date: 2018-6-17 23:59:59 -0700
     timezone: PDT
     text: Notification of acceptance
-    pass_due: True
+    pass_due: False
 news:
-  - date: 2017-03-08
+  - date: 2018-04-18
     text: Website online
-sponsors:
-  - name: Adobe
-    logo_path: ./assets/images/sponsors/adobe-logo.png
-  - name: Akamai
-    logo_path: ./assets/images/sponsors/akamai-logo.png
-  - name: Google
-    logo_path: ./assets/images/sponsors/google-logo.png
-  - name: IBM
-    logo_path: ./assets/images/sponsors/ibm-logo.jpg
-  - name: IEEE
-    logo_path: ./assets/images/sponsors/ieee-logo.gif
-social_media:
-  facebook_link: https://www.facebook.com/hotwebseries/
-  twitter_link:
+#sponsors:
+#  - name: Adobe
+#    logo_path: ./assets/images/sponsors/adobe-logo.png
+#  - name: Akamai
+#    logo_path: ./assets/images/sponsors/akamai-logo.png
+#  - name: Google
+#    logo_path: ./assets/images/sponsors/google-logo.png
+#  - name: IBM
+#    logo_path: ./assets/images/sponsors/ibm-logo.jpg
+#  - name: IEEE
+#    logo_path: ./assets/images/sponsors/ieee-logo.gif
+#social_media:
+#  facebook_link: https://www.facebook.com/hotwebseries/
+#  twitter_link:
 organizing_committees:
   - role: Program Chair
-    name: Qun Li
-    org: College of William and Mary (USA)
-    homepage: http://www.cs.wm.edu/liqun
+    name: TBA
+    org: TBA
+    homepage: TBA
   - role: Registration Chair
     name: TBA
     org: TBA
