@@ -44,7 +44,8 @@ of the video tutorial track.
 
 ## Submissions
 
-Categories. Submissions should fall into one of the
+### Categories
+Submissions should fall into one of the
 following categories:
 
 <ol type="I">
@@ -92,7 +93,7 @@ location where the tutorial can be accessed and viewed. </li>
 
 EasyChair will be used to handle the submissions of papers in Categories I to III and of summaries of video tutorials. The submission link is: [https://easychair.org/conferences/?conf=mdetools17](https://easychair.org/conferences/?conf=mdetools17).
 
-## Format and size limits. 
+### Format and size limits
 All submitted artifacts must
 use English. All textual documents must adhere to the [Springer LNCS formatting guidelines](http://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines). Research
 papers (Category I), comparisons and evaluations of
@@ -102,14 +103,14 @@ problem (Category IV), should be between 6 and 10 pages in
 length. Video tutorials should not be longer than 10 minutes;
 the accompanying summary should not exceed 2 pages.
 
-## Publication. 
+### Publication 
 Accepted papers and summaries of accepted
 video tutorials will be published in the workshop
 proceedings which will be made available using the openaccess
 publication service CEUR (http://ceur-ws.org).
 
 
-## Evaluation process
+### Evaluation process
 The submission and reviewing process will be handled using
 EasyChair. All submissions will be reviewed by at least three
 PC members. Acceptance decisions will be made based on
