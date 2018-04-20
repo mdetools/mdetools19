@@ -11,8 +11,9 @@ transformation, evolution, communication, generation,
 execution, testing, simulation, or analysis) and that
 offers benefit to the user through the effective use of some
 or all of the three core principles behind MDE: abstraction,
-automation, and analysis; tools can come from industry or
+automation, and analysis. Tools can come from industry or
 academia and be freely available, open source, or commercial.
+
 MDETools’18 welcomes submissions on aspects related to
 the development and use of such tools and their supporting
 materials.
@@ -38,7 +39,7 @@ Server Protocol, the Eclipse ecosystem and open source
 tools in general).
 5. Proposals for facilitating the creation, maintenance
 and dissemination of high-quality tools and materials.
-(6) Techniques and tools for the creation of attractive
+6. Techniques and tools for the creation of attractive
 documentation material, in general and in the context
 of the video tutorial track.
 
@@ -72,10 +73,10 @@ removed are particularly encouraged. </li>
 
 <li><strong>Descriptions of MDE tool use in context of the
 challenge problem:</strong> describe (1) how significant aspects
-of the challenge problem have been addressed
+of the <a href="challengeproblem.html" >challenge problem</a> have been addressed
 with the help of an MDE tool or tools, and (2) the
 strengths and weaknesses of the tool in the context
-of the chosen problem. All created models must be
+of the problem. All created models must be
 made public and information about how they can be
 obtained must be provided. </li>
 
@@ -85,13 +86,20 @@ accurate, attractive, and polished way. Submissions
 should be accompanied by a short summary containing
 (1) a description of the contents of the tutorial including
 the tool and task(s) chosen, and (2) a URL of the web
-location where the tutorial can be accessed and viewed. </li>
+location where the tutorial can be accessed and viewed. 
+Guidelines for submitting video tutorials are available <a href="videoguideline.html"> here</a>. 
+ </li>
 
 </ol>
 
 
 
-EasyChair will be used to handle the submissions of papers in Categories I to III and of summaries of video tutorials. The submission link is: [https://easychair.org/conferences/?conf=mdetools17](https://easychair.org/conferences/?conf=mdetools17).
+EasyChair will be used to handle the submissions of papers in Categories I to IVand of summaries of video tutorials. The submission link is: [https://easychair.org/conferences/?conf=mdetools18](https://easychair.org/conferences/?conf=mdetools18).
+
+### Important Dates
+- Submission deadline: July 17, 2018 
+- Notification deadline: August 17, 2018 
+- Camera ready copy: TBA 
 
 ### Format and size limits
 All submitted artifacts must
@@ -103,14 +111,15 @@ problem (Category IV), should be between 6 and 10 pages in
 length. Video tutorials should not be longer than 10 minutes;
 the accompanying summary should not exceed 2 pages.
 
+
 ### Publication 
 Accepted papers and summaries of accepted
 video tutorials will be published in the workshop
 proceedings which will be made available using the openaccess
-publication service CEUR (http://ceur-ws.org).
+publication service CEUR [ceur-ws.org](http://ceur-ws.org).
 
 
-### Evaluation process
+### Evaluation process and criteria
 The submission and reviewing process will be handled using
 EasyChair. All submissions will be reviewed by at least three
 PC members. Acceptance decisions will be made based on
@@ -125,4 +134,4 @@ users; the tutorial should be attractive and polished and use
 the tutorial format effectively.
 Submissions with workshop organizers as (co-)authors will
 be allowed, but care will be taken to enforce the [standard conflict rules](http://www.sigsoft.org/about/policies/pc-policy.htm) when assigning papers for review, collecting reviews,
-and discussing submissions
+and discussing submissions.

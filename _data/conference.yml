@@ -34,7 +34,7 @@ navbar:
   - id: 3
     label: Submission
     path: ./submission.html
-    visible: True
+    visible: False
   - id: 4
     label: Program
     path: ./program.html
