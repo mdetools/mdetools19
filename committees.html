@@ -12,12 +12,12 @@ slide_id: 1
                 <div class="card-header text-white bg-inverse"> <i class="fa fa-users mr-3" aria-hidden="true"></i>Organizers</div>
                 {% if site.data.conference.organizing_committees %}
                 {% for committee in site.data.conference.organizing_committees %}
-                 <div class="card-block bg-faded">
+                 <!--<div class="card-block bg-faded">-->
                     <!--<h6 class="card-title">{{ committee.role }}</h6> -->
-                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
-                    <a href="mailto:{{ committee.org }}"><strong>{{ committee.org }}</strong></a>
+                   <p> &nbsp<a href="mailto:{{ committee.org }}">{{ committee.name }}</a></p>
+                   <!-- <a href="mailto:{{ committee.org }}"><strong>{{ committee.org }}</strong></a> -->
                     <!--<h6 class="card-subtitle text-muted">{{ committee.org }}</h6> -->
-                </div>  
+               <!-- </div>  -->
                 {% endfor %}
                 {% else %}
                 <div class="card-block bg-faded">
