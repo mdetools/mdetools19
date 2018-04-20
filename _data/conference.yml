@@ -48,11 +48,11 @@ navbar:
     path: ./registration.html
     visible: False
 deadlines:
-  - date: 2018-6-17 23:59:59 -0700
+  - date: 2018-7-17 23:59:59 -0700
     timezone: PDT
     text: Submission deadline
     pass_due: False
-  - date: 2018-6-17 23:59:59 -0700
+  - date: 2018-8-17 23:59:59 -0700
     timezone: PDT
     text: Notification of acceptance
     pass_due: False
@@ -74,21 +74,56 @@ news:
 #  facebook_link: https://www.facebook.com/hotwebseries/
 #  twitter_link:
 organizing_committees:
-  - role: Program Chair
-    name: TBA
-    org: TBA
-    homepage: TBA
-  - role: Registration Chair
-    name: TBA
-    org: TBA
-    homepage: TBA
-steering_committees:
-  - name: TBA
-    org: TBA
-    homepage: TBA
-technical_program_committees:
-  - name: TBA
-    org: TBA
-    homepage: TBA
+  - role: Primary Contact
+    name: Mojtaba Bagherzadeh, Queen’s University, Canada
+    org: mojtaba@cs.queensu.ca
+    homepage: http://flux.cs.queensu.ca/mase/member/bagherzadeh/
+  - role: Primary Contact
+    name: Francis Bordeleau, Cmind, Canada
+    org: francis.bordeleau@cmind.io
+    homepage: http://cmind.io 
+  - role: Primary Contact
+    name: Juergen Dingel, Queen’s University, Canada
+    org: dingel@cs.queensu.ca (Primary contact)
+    homepage: http://research.cs.queensu.ca/home/dingel/
+  - role: Primary Contact
+    name: Michalis Famelis, University of Montreal, Canada
+    org: ffamelis@iro.umontreal.ca
+    homepage: https://michalis.famelis.info/
+  - role: Primary Contact
+    name: Antonio Garcia-Dominguez, Aston University, UK
+    org: a.garcia-dominguez@aston.ac.uk
+    homepage: https://www.cs.aston.ac.uk/~garcia-a/ 
+  - role: Primary Contact
+    name: Raquel Ara´ujo de Oliveira, University of Toulouse, France
+    org: faquel.oliveira@irit.fr
+    homepage: https://www.irit.fr/~Raquel.Oliveira/
+  - role: Primary Contact
+    name: Ernesto Posse, Zeligsoft, Canada
+    org: eposse@zeligsoft.com
+    homepage: http://www.zeligsoft.com/
+  - role: Primary Contact
+    name: Ed Seidewitz, nMeta, USA
+    org: ed-s@modeldriven.com
+    homepage: http://modeldriven.com/ 
+  - role: Primary Contact
+    name: Bran Selic, Malina Software Corp., Canada
+    org: selic@acm.org
+    homepage: https://ca.linkedin.com/in/bran-selic-0a45b
+
+
+
+#  - role: Registration Chair
+#    name: TBA
+#    org: TBA
+#    homepage: TBA
+#steering_committees:
+#  - name: TBA
+#    org: TBA
+#    homepage: TBA
+#technical_program_committees:
+#  - name: TBA
+#    org: TBA
+#    homepage: TBA
 
 

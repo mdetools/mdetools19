@@ -9,13 +9,14 @@ slide_id: 1
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <!--######### Organizing ##########-->
             <div class="card">
-                <div class="card-header text-white bg-inverse"> <i class="fa fa-users mr-3" aria-hidden="true"></i>Organizing Committee</div>
+                <div class="card-header text-white bg-inverse"> <i class="fa fa-users mr-3" aria-hidden="true"></i>Organizers</div>
                 {% if site.data.conference.organizing_committees %}
                 {% for committee in site.data.conference.organizing_committees %}
                  <div class="card-block bg-faded">
-                    <h6 class="card-title">{{ committee.role }}</h6>
+                    <!--<h6 class="card-title">{{ committee.role }}</h6> -->
                     <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
-                    <h6 class="card-subtitle text-muted">{{ committee.org }}</h6>
+                    <a href="mailto:{{ committee.org }}"><strong>{{ committee.org }}</strong></a>
+                    <!--<h6 class="card-subtitle text-muted">{{ committee.org }}</h6> -->
                 </div>  
                 {% endfor %}
                 {% else %}
@@ -26,7 +27,7 @@ slide_id: 1
                 </div>               
                 {% endif %}
             </div>
-            <!--######### Steering ##########-->
+            <!--######### Steering ##########-
             <div class="card">
                 <div class="card-header text-white bg-inverse"><i class="fa fa-users mr-3" aria-hidden="true"></i>Steering Committee</div>
                 {% if site.data.conference.steering_committees %}
@@ -36,13 +37,13 @@ slide_id: 1
                     <h6 class="card-subtitle text-muted">{{ committee.org }}</h6>
                 </div>  
                 {% endfor %}
-                {% else %}
+                <!--{% else %}
                 <div class="card-block bg-faded">
                     <p><strong>TBA</strong><p>
                     <h6 class="card-subtitle text-muted">TBA</h6>
                 </div>               
-                {% endif %}
-            </div>
+                {% endif %}  
+            </div>  -->
             <!--####################################-->
         </div>
 
