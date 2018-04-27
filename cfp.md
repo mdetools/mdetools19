@@ -73,7 +73,7 @@ removed are particularly encouraged. </li>
 
 <li><strong>Descriptions of MDE tool use in context of the
 challenge problem:</strong> describe (1) how significant aspects
-of the <a href="challengeproblem.html" >challenge problem</a> have been addressed
+of the challenge problem have been addressed
 with the help of an MDE tool or tools, and (2) the
 strengths and weaknesses of the tool in the context
 of the problem. All created models must be
@@ -86,20 +86,13 @@ accurate, attractive, and polished way. Submissions
 should be accompanied by a short summary containing
 (1) a description of the contents of the tutorial including
 the tool and task(s) chosen, and (2) a URL of the web
-location where the tutorial can be accessed and viewed. 
-Guidelines for submitting video tutorials are available <a href="videoguideline.html"> here</a>. 
- </li>
+location where the tutorial can be accessed and viewed. </li>
 
 </ol>
 
 
 
-EasyChair will be used to handle the submissions of papers in Categories I to IVand of summaries of video tutorials. The submission link is: [https://easychair.org/conferences/?conf=mdetools18](https://easychair.org/conferences/?conf=mdetools18).
-
-### Important Dates
-- Submission deadline: July 17, 2018 
-- Notification deadline: August 17, 2018 
-- Camera ready copy: TBA 
+EasyChair will be used to handle the submissions of papers in Categories I to IV and of summaries of video tutorials. The submission link is: [https://easychair.org/conferences/?conf=mdetools18](https://easychair.org/conferences/?conf=mdetools18).
 
 ### Format and size limits
 All submitted artifacts must
@@ -110,7 +103,6 @@ and descriptions of tool use in the context of the challenge
 problem (Category IV), should be between 6 and 10 pages in
 length. Video tutorials should not be longer than 10 minutes;
 the accompanying summary should not exceed 2 pages.
-
 
 ### Publication 
 Accepted papers and summaries of accepted
