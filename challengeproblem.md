@@ -67,10 +67,23 @@ Simulation can be configured using the parameters inside the `Settings/config.tx
 {:.mbtablestyle}
 |Parameter             | Default Value &nbsp; | Description|
 -----------------------| --------------       |-------------
-controlPort            | 9998                 | The TCP port that control commands can be accessed|
-observationPort &nbsp; | 9999                 | The TCP port that observation commands can be accessed|
-xxx                    | yyy                  | desc|
-{:.mbtablestyle}
+controlPort|9998|The TCP port that control commands can be accessed
+observationPort|9999|The TCP port that observation commands can be accessed
+leaderPort|9997|The TCP port that UnityObserver controls the leader through
+evaluationPort|9996|The TCP port that UnityObserver observes the follower through
+simulationIP|127.0.0.1|The IP address that the simulation and UnityObserver are running on
+runTime|60000|The Running time of the simulation in ms
+waitMin|2000|The minimum time between direction changes for the leader in ms
+waitMax|5000|The maximum time between direction changes for the leader in ms
+speedMin|10|The minimum wheel motor speed for the leader in % of total.
+speedMax|60|The maximum wheel motor speed for the leader in % of total.
+straightPercent|20|The percent chance that the rover will go straight instead of turning 
+fileName|test1.csv|The name of the file to read or write movements too
+preRecorded|false|False will create a new set of random moves and write them to a file after simulation, True will read moves from the file and play them back.
+minDistance|12|The distance at which the follower is too close to the leader
+maxDistance|15|The distance at which the follower is too far from the leader
+sampleRate|250|The time in ms between position updates, and distance evaluations. 
+
 
 ## Supported Commands
 As discussed several commands are provided for control and observartion which can be used by sending a message to related TCP port. Each message is a ASCII string. Format message of control messages is   `"Rover,"+commandID([command Parameter]*)`. For example there is a `brake` command that accepts one interger parametr a string,  sending the string  `Rover,brake(2)` call the brake command with parameter 2.  Format message of observation messages only contain command id and its parameter, i.e., `commandID([command Parameter]*)`
@@ -103,6 +116,8 @@ ready         | None               | None         | start the simulation | ready
 
 ## How to evaluate your solution?
 As discussed `follower` always should keep a safe distance from `leader`. To verify that, the `UnityObserver` always monitor the distance between two rovers and report the time that `follower` is out of the safe distance. You can evaluate your solution based on this data reported by `UnityObserver`.
+
+Note that by seeting  `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
 
 
 
