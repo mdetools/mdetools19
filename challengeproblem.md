@@ -65,24 +65,24 @@ To run the simulation follow the below steps sequentially:
 Simulation can be configured using the parameters inside the `Settings/config.txt`. You may need to change this configuration on special cases such as changing TCP ports. The main configuration and their default value are described below.
 
 {:.mbtablestyle}
-|Parameter             | Default Value &nbsp; | Description|
+|Parameter             | Default Value &nbsp; | Description| Hints
 -----------------------| --------------       |-------------
-controlPort|9998|The TCP port that control commands can be accessed
-observationPort|9999|The TCP port that observation commands can be accessed
-leaderPort|9997|The TCP port that UnityObserver controls the leader through
-evaluationPort|9996|The TCP port that UnityObserver observes the follower through
-simulationIP|127.0.0.1|The IP address that the simulation and UnityObserver are running on
-runTime|60000|The Running time of the simulation in ms
-waitMin|2000|The minimum time between direction changes for the leader in ms
-waitMax|5000|The maximum time between direction changes for the leader in ms
-speedMin|10|The minimum wheel motor speed for the leader in % of total.
-speedMax|60|The maximum wheel motor speed for the leader in % of total.
-straightPercent|20|The percent chance that the rover will go straight instead of turning 
-fileName|test1.csv|The name of the file to read or write movements too
-preRecorded|false|False will create a new set of random moves and write them to a file after simulation, True will read moves from the file and play them back.
-minDistance|12|The distance at which the follower is too close to the leader
-maxDistance|15|The distance at which the follower is too far from the leader
-sampleRate|250|The time in ms between position updates, and distance evaluations. 
+controlPort|9998|The TCP port that control commands can be accessed| None
+observationPort|9999|The TCP port that observation commands can be accessed | None
+leaderPort|9997|The TCP port that UnityObserver controls the leader through | changing this configuration is not recommended
+evaluationPort|9996|The TCP port that UnityObserver observes the follower through | changing this configuration is not recommended
+simulationIP|127.0.0.1|The IP address that the simulation and UnityObserver are running on | None
+runTime|60000|The Running time of the simulation in ms | None
+waitMin|2000|The minimum time between direction changes for the leader in ms | None
+waitMax|5000|The maximum time between direction changes for the leader in ms | None
+speedMin|10|The minimum wheel motor speed for the leader in % of total. | None
+speedMax|60|The maximum wheel motor speed for the leader in % of total. | None
+straightPercent|20|The percent chance that the rover will go straight instead of turning | None
+fileName|test1.csv|The name of the file to read or write movements too | None
+preRecorded|false|False will create a new set of random moves and write them to a file after simulation, True will read moves from the file and play them back. | None
+minDistance|12|The distance at which the follower is too close to the leader | None
+maxDistance|15|The distance at which the follower is too far from the leader | None
+sampleRate|250|The time in ms between position updates, and distance evaluations. | None
 
 
 ## Supported Commands
@@ -91,26 +91,26 @@ Some commands return some fields as results packed in string seperated by comma.
 
 ### Control Commands
 
-|Command ID            | Parameters  &nbsp;       | Returns  &nbsp;    | Description   &nbsp;                                        | Sample Message |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
 :-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
-setForwardPower        | amount of power                | None         | change the power of all wheels   |Rover,setForwardPower(int)|
-incrementPower         | amount of power                 | None         | increment the power of all wheels |Rover,incrementPower(int) | 
-setLRPower         | right power, left power                 | None         | Set the power of the left and right wheels |Rover,setLRPower(int,int) | 
-brake         | amount of power                | None         | Apply the amount of brake power to all wheels |Rover,brake(int) | 
-GPSx         | None                | Rover,X coordinate;         | returns the X coordinate |Rover,GPSx() | 
-GPSy         | None                | Rover,Y coordinate;         | returns the Y coordinate |Rover,GPSy() | 
-GPSz         | None                | Rover,Z coordinate;        | returns the Z coordinate |Rover,GPSz() | 
-getCompass         | None                | Rover,degrees clockwise of North;         | returns the the degrees clockwise of North |Rover,getCompass()| 
+setForwardPower        | amount of power  (Int)              | None         | change the power of all wheels   |Rover,setForwardPower(int)|
+incrementPower         | amount of power  (Int)              | None         | increment the power of all wheels |Rover,incrementPower(int) | 
+setLRPower         | right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |Rover,setLRPower(int,int) | 
+brake         | amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |Rover,brake(int) | 
+GPSx         | None                | Rover,X coordinate; (Real)         | returns the X coordinate |Rover,GPSx() | 
+GPSy         | None                | Rover,Y coordinate; (Real)       	| returns the Y coordinate |Rover,GPSy() | 
+GPSz         | None                | Rover,Z coordinate; (Real)       	| returns the Z coordinate |Rover,GPSz() | 
+getCompass         | None                | Rover,degrees clockwise of North; (Real)        | returns the the degrees clockwise of North |Rover,getCompass()| 
 
 
 
 ### Observation Commands  
 
-|Command ID            | Parameters  &nbsp;       | Returns  &nbsp;    | Description   &nbsp;                                        | Sample Message |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
-getTargetX        | None               | x position of  `leader`         | returns the x position of the `leader`   |posx|
-getTargetyZ       | None               | z position of  `leader`         | returns the x position of the `leader`   |posx|
-getDistance         | None                 | distance with  `leader`        | returns the distance between `follower` and `leader` |dist| 
+getTargetX        | None               | x position of  `leader`     (Real)  | returns the x position of the `leader`   |posx|
+getTargetyZ       | None               | z position of  `leader`       (Real) | returns the x position of the `leader`   |posx|
+getDistance         | None                 | distance with  `leader`    (Real)    | returns the distance between `follower` and `leader` |dist| 
 ready         | None               | None         | start the simulation | ready| 
 
 
