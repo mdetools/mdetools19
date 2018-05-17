@@ -4,7 +4,7 @@ slide_id: 4
 ---
 
 ## Introduction:
-We created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting up the simulation, `leader` takes a random path while changing its speed continuously. In this challenging problem, you are required to use a MDD tool and implement a control model for `follower` such that it always follows `leader` while keeping a safe distance from it. Safe distance is defined by a range from maxDistance to minDistance which can be configured.  Anytime that `follower` is out of safe distance is considered as an unsafe condition and must be avoided.
+We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting up the simulation, `leader` takes a random path while changing its speed continuously. In this challenging problem, you are required to use a MDD tool and implement a control model for `follower` such that it always follows `leader` while keeping a safe distance from it. Safe distance is defined by a range from maxDistance to minDistance which can be configured.  Anytime that `follower` is out of safe distance is considered as an unsafe condition and must be avoided.
 
  To control `follower` safely two set of commands are provided. (1) A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. (2) A set of observation commands that allows to observe the environment and understand the `leader` position and other required information. As shown in the following figure, both of control and monitoring command can be accessed through passing related messages using TCP connections to `controlPort` and `observationPort` port which are configured using configuration file.   
 
