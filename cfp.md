@@ -73,7 +73,7 @@ removed are particularly encouraged. </li>
 
 <li><strong>Descriptions of MDE tool use in context of the
 challenge problem:</strong> describe (1) how significant aspects
-of the challenge problem have been addressed
+of the  <a href="./challengeproblem.html">challenge problem </a>  have been addressed
 with the help of an MDE tool or tools, and (2) the
 strengths and weaknesses of the tool in the context
 of the problem. All created models must be
