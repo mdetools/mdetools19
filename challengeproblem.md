@@ -55,7 +55,7 @@ To run the simulation follow the below steps sequentially:
 
 1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the simulator listens at TCP port 9998. However, you do not have access to observation commands and you need to start the simulation before using that. 
 
-&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
+&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example1.png" style="width: 500px;"  />
 
 2. Run the  `UnityObserver.jar` which provides observation commands. by default, it listen on TCP port 9999. 
 
