@@ -53,41 +53,40 @@ Note that depending on your platfrom, only one of the three folders Linux, Mac, 
 ```
 To run the simulation follow the below steps sequentially:
 
-1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the simulation. 
+1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the UnityObserver. 
 
 &nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
 
-2. Run the  `UnityObserver.jar` which provides observation commands. by default, it listen on TCP port 9999. 
+2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999. 
 
-3. Now everything is ready to use, and you can start modeling your control. First you need to send a `ready` command to start the simulation. To make sure that simulation is loaded correctly and UnityObserver is started correctly, you can use the simple java program (`RoverController.jar `) that allows controlling the `follower` using the arrow keys. Note that the source code of this program is aviable at `RoverController-Source` and you can review that to get more familiar with supported commands.
-
+3. Now everything is ready to use, and you can start modeling your control. First, you need to send a `ready` command to start the simulation. To make sure that the simulation and the UnityObserver have started correctly, you can use the simple Java program (`RoverController.jar`) that allows controlling the `follower` using the arrow keys on your keyboard. The source code of this program is aviable in `RoverController-Source` and might be helpful to become more familiar with the available commands.
 
 ## Configuration
-Simulation can be configured using the parameters inside the `Settings/config.txt`. You may need to change this configuration on special cases such as changing TCP ports. The main configuration and their default value are described below.
+The simulation can be configured using the parameters inside the `Settings/config.txt`. You may need to change this configuration in special cases such as changing TCP ports. The main configuration and their default value are described below.
 
 {:.mbtablestyle}
 |Parameter             | Default Value &nbsp; | Description| Hints
 -----------------------| --------------       |-------------
-controlPort|9998|The TCP port that control commands can be accessed| None
-observationPort|9999|The TCP port that observation commands can be accessed | None
-leaderPort|9997|The TCP port that UnityObserver controls the leader through | changing this configuration is not recommended
-evaluationPort|9996|The TCP port that UnityObserver observes the follower through | changing this configuration is not recommended
-simulationIP|127.0.0.1|The IP address that the simulation and UnityObserver are running on | None
-runTime|60000|The Running time of the simulation in ms | None
-waitMin|2000|The minimum time between direction changes for the leader in ms | None
-waitMax|5000|The maximum time between direction changes for the leader in ms | None
-speedMin|10|The minimum wheel motor speed for the leader in % of total. | None
-speedMax|60|The maximum wheel motor speed for the leader in % of total. | None
-straightPercent|20|The percent chance that the rover will go straight instead of turning | None
-fileName|test1.csv|The name of the file to read or write movements too | None
-preRecorded|false|False will create a new set of random moves and write them to a file after simulation, True will read moves from the file and play them back. | None
-minDistance|12|The distance at which the follower is too close to the leader | None
-maxDistance|15|The distance at which the follower is too far from the leader | None
-sampleRate|250|The time in ms between position updates, and distance evaluations. | None
+controlPort|9998|TCP port for control commands | None
+observationPort |9999|TCP port for observation commands | None
+leaderPort|9997|TCP port that the UnityObserver controls the leader through | Changing this configuration is not recommended
+evaluationPort|9996|TCP port that the UnityObserver observes the follower through | Changing this configuration is not recommended
+simulationIP|127.0.0.1|IP address that the simulation and the UnityObserver are running on | None
+runTime|60000|Total execution time of the simulation in ms | None
+waitMin|2000|Minimum time between direction changes for the leader in ms | None
+waitMax|5000|Maximum time between direction changes for the leader in ms | None
+speedMin|10|Minimum wheel motor speed for the leader in % of total | None
+speedMax|60|Maximum wheel motor speed for the leader in % of total | None
+straightPercent|20|Percent chance that the rover will go straight instead of turning | None
+fileName|test1.csv|Name of the file to read or write movements info | None
+preRecorded|false|False will create a new set of random moves and write them to file fileName after simulation. True will read moves from the file and play them back. | None
+minDistance|12|Distance at which the follower is too close to the leader | None
+maxDistance|15|Distance at which the follower is too far from the leader | None
+sampleRate|250|Time in ms between position updates and distance evaluations | None
 
 
 ## Supported Commands
-As discussed several commands are provided for control and observartion which can be used by sending a message to related TCP port. Each message is a ASCII string. Format message of control messages is   `"Rover,"+commandID([command Parameter]*)`. For example there is a `brake` command that accepts one interger parametr a string,  sending the string  `Rover,brake(2)` call the brake command with parameter 2.  Format message of observation messages only contain command id and its parameter, i.e., `commandID([command Parameter]*)`
+As discussed, several commands are provided for control and observartion which can be used by sending a message to related TCP port. Each message is a ASCII string. Format message of control messages is   `"Rover,"+commandID([command Parameter]*)`. For example there is a `brake` command that accepts one interger parametr a string,  sending the string  `Rover,brake(2)` call the brake command with parameter 2.  Format message of observation messages only contain command id and its parameter, i.e., `commandID([command Parameter]*)`
 Some commands return some fields as results packed in string seperated by comma. Below we decribe the supported commands in two groups of observation and control.
 
 ### Control Commands
