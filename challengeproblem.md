@@ -21,9 +21,9 @@ The simulation package is avaialble for three platforms (Mac, Windows, Linux). T
 
 [Windows](https://drive.google.com/file/d/1EdfnNvvc_n7p-k5k_RN-llJnLnGCnwmg/view?ts=5aff52ee) 
 
-[Linux](https://drive.google.com/open?id=1CUr230c430hgQ4YkVsVK6JDG0pBijkm3) 
+[Linux](https://drive.google.com/file/d/1CUr230c430hgQ4YkVsVK6JDG0pBijkm3/view?usp=sharing) 
 
-[Mac](https://drive.google.com/open?id=1EcfEQ0YkuA8Y9XXrEO9Z2gBtl0YbL-Ag) 
+[Mac](https://drive.google.com/file/d/1EcfEQ0YkuA8Y9XXrEO9Z2gBtl0YbL-Ag/view) 
 
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files. 
