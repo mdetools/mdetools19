@@ -91,7 +91,7 @@ Some commands return key-value pairs as results packed in string seperated by co
 
 ### Control Commands
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | &nbsp; Description   &nbsp;                                        | &nbsp; Sample Message |
 :-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
 setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |Rover,setForwardPower(Int)|
 incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |Rover,incrementPower(int) | 
@@ -106,10 +106,10 @@ getCompass         | None                | Rover,degrees clockwise of North (Rea
 
 ### Observation Commands  
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message &nbsp; |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | &nbsp; Sample Message &nbsp; |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
 getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |posx|
-getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the Z position of the `leader`   |posx|
+getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the z position of the `leader`   |posx|
 getDistance         | None                 | Distance with  `leader`    (Real) &nbsp;   | Returns the distance between `follower` and `leader` &nbsp; | dist| 
 ready         | None               | None         | Starts the simulation | ready| 
 
