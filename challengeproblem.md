@@ -65,7 +65,7 @@ To run the simulation follow the below steps sequentially:
 The simulation can be configured using the parameters inside the `Settings/config.txt`. You may need to change this configuration in special cases such as changing TCP ports. The main configuration and their default value are described below.
 
 {:.mbtablestyle}
-|Parameter             | Default Value &nbsp; | Description| Hints
+|Parameter             | &nbsp; Default Value &nbsp; | Description| Hints
 -----------------------| --------------       |-------------
 controlPort|9998|TCP port for control commands | None
 observationPort |9999|TCP port for observation commands | None
@@ -91,7 +91,7 @@ Some commands return key-value pairs as results packed in string seperated by co
 
 ### Control Commands
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | &nbsp; Description   &nbsp;                                        | &nbsp; Sample Message |
+|Command ID &nbsp;           | &nbsp; Parameters and types &nbsp;       | &nbsp; Returns and types &nbsp;    | &nbsp; Description   &nbsp;                                        | &nbsp; Sample Message |
 :-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
 setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |Rover,setForwardPower(Int)|
 incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |Rover,incrementPower(int) | 
@@ -106,7 +106,7 @@ getCompass         | None                | Rover,degrees clockwise of North (Rea
 
 ### Observation Commands  
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | &nbsp; Sample Message &nbsp; |
+|Command ID            | &nbsp; Parameters and types &nbsp;       | &nbsp; Returns and types &nbsp;    | &nbsp; Description   &nbsp;                                        | &nbsp; Sample Message &nbsp; |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
 getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |posx|
 getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the z position of the `leader`   |posx|
