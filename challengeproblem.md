@@ -54,9 +54,9 @@ Note that depending on your platfrom, only one of the three folders Linux, Mac, 
 To run the simulation follow the steps below:
 
 1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the UnityObserver. 
-
-&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
-
+	
+	&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
+	
 2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999. 
 
 3. Now everything is ready to use, and you can start modeling your control. First, you need to send a `ready` command to start the simulation. To make sure that the simulation and the UnityObserver have started correctly, you can use the simple Java program (`RoverController.jar`) that allows controlling the `follower` using the arrow keys on your keyboard. The source code of this program is aviable in `RoverController-Source` and might be helpful to become more familiar with the available commands.
