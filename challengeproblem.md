@@ -106,11 +106,11 @@ getCompass         | None                | Rover,degrees clockwise of North (Rea
 
 ### Observation Commands  
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message &nbsp; |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
 getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |posx|
 getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the Z position of the `leader`   |posx|
-getDistance         | None                 | distance with  `leader`    (Real)    | Returns the distance between `follower` and `leader` |dist| 
+getDistance         | None                 | Distance with  `leader`    (Real) &nbsp;   | Returns the distance between `follower` and `leader` &nbsp; | dist| 
 ready         | None               | None         | Starts the simulation | ready| 
 
 
