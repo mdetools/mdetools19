@@ -10,7 +10,7 @@ We have created a simulated environment that contains two rovers called `leader`
 
  To control the `follower` two set of commands are provided: (1) A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. (2) A set of observation commands that allows obtaining relevant information such as the position of the the `leader`. As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can also be configured.   
 
-<img  align="middle" src="assets/images/challangeProblem.png"/>
+<img  align="middle" src="assets/images/challangeProblem.png" style="width: 500px;"/>
 
 
 ## Starting Guide
@@ -51,7 +51,7 @@ Note that depending on your platfrom, only one of the three folders Linux, Mac, 
     └── UnityPlayer.dll
 
 ```
-To run the simulation follow the below steps sequentially:
+To run the simulation follow the steps below:
 
 1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the UnityObserver. 
 
@@ -79,7 +79,7 @@ speedMin|10|Minimum wheel motor speed for the leader in % of total | None
 speedMax|60|Maximum wheel motor speed for the leader in % of total | None
 straightPercent|20|Percent chance that the rover will go straight instead of turning | None
 fileName|test1.csv|Name of the file to read or write movements info | None
-preRecorded|false|False will create a new set of random moves and write them to file fileName after simulation. True will read moves from the file and play them back. | None
+preRecorded|false|`false` will create a new set of random moves and write them to file fileName after simulation. `true` will read moves from the file and play them back. | None
 minDistance|12|Distance at which the follower is too close to the leader | None
 maxDistance|15|Distance at which the follower is too far from the leader | None
 sampleRate|250|Time in ms between position updates and distance evaluations | None
