@@ -86,21 +86,21 @@ sampleRate|250|Time in ms between position updates and distance evaluations | No
 
 
 ## Supported Commands
-As discussed, several commands are provided for control and observartion which can be used by sending a message to related TCP port. Each message is a ASCII string. Format message of control messages is   `"Rover,"+commandID([command Parameter]*)`. For example there is a `brake` command that accepts one interger parametr a string,  sending the string  `Rover,brake(2)` call the brake command with parameter 2.  Format message of observation messages only contain command id and its parameter, i.e., `commandID([command Parameter]*)`
-Some commands return some fields as results packed in string seperated by comma. Below we decribe the supported commands in two groups of observation and control.
+As discussed, several commands are provided for control and observartion which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `Rover,brake(2)` will invoke the brake command with parameter 2.  Observation messages only contain the id of the command and its parameters (if any), i.e., their format is `commandID([command Parameter]*)`
+Some commands return key-value pairs as results packed in string seperated by commas. Below we decribe the supported commands.
 
 ### Control Commands
 
 |Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
 :-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
-setForwardPower        | amount of power  (Int)              | None         | change the power of all wheels   |Rover,setForwardPower(int)|
-incrementPower         | amount of power  (Int)              | None         | increment the power of all wheels |Rover,incrementPower(int) | 
-setLRPower         | right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |Rover,setLRPower(int,int) | 
-brake         | amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |Rover,brake(int) | 
-GPSx         | None                | Rover,X coordinate; (Real)         | returns the X coordinate |Rover,GPSx() | 
-GPSy         | None                | Rover,Y coordinate; (Real)       	| returns the Y coordinate |Rover,GPSy() | 
-GPSz         | None                | Rover,Z coordinate; (Real)       	| returns the Z coordinate |Rover,GPSz() | 
-getCompass         | None                | Rover,degrees clockwise of North; (Real)        | returns the the degrees clockwise of North |Rover,getCompass()| 
+setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |Rover,setForwardPower(Int)|
+incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |Rover,incrementPower(int) | 
+setLRPower         | Right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |Rover,setLRPower(Int,Int) | 
+brake         | Amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |Rover,brake(Int) | 
+GPSx         | None                | Rover,X coordinate (Real)         | Returns the X coordinate |Rover,GPSx() | 
+GPSy         | None                | Rover,Y coordinate (Real)       	| Returns the Y coordinate |Rover,GPSy() | 
+GPSz         | None                | Rover,Z coordinate (Real)       	| Returns the Z coordinate |Rover,GPSz() | 
+getCompass         | None                | Rover,degrees clockwise of North (Real)        | Returns the degrees clockwise from North |Rover,getCompass()| 
 
 
 
@@ -108,13 +108,13 @@ getCompass         | None                | Rover,degrees clockwise of North; (Re
 
 |Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
-getTargetX        | None               | x position of  `leader`     (Real)  | returns the x position of the `leader`   |posx|
-getTargetyZ       | None               | z position of  `leader`       (Real) | returns the x position of the `leader`   |posx|
-getDistance         | None                 | distance with  `leader`    (Real)    | returns the distance between `follower` and `leader` |dist| 
-ready         | None               | None         | start the simulation | ready| 
+getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |posx|
+getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the Z position of the `leader`   |posx|
+getDistance         | None                 | distance with  `leader`    (Real)    | Returns the distance between `follower` and `leader` |dist| 
+ready         | None               | None         | Starts the simulation | ready| 
 
 
 ## How to evaluate your solution?
-As discussed `follower` always should keep a safe distance from `leader`. To verify that, the `UnityObserver` always monitor the distance between two rovers and report the time that `follower` is out of the safe distance. You can evaluate your solution based on this data reported by `UnityObserver`.
+As mentioned, the `follower` should always keep a safe distance from the `leader`. To enforce this rule, the `UnityObserver` always monitors the distance between the two rovers and reports the amount of time that the `follower` violates it, i.e., is out of the safe distance. You can evaluate your solution based on this data reported by the `UnityObserver`.
 
-Note that by seeting  `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
+Note that by setting `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
