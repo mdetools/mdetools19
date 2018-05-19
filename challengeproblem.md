@@ -3,31 +3,30 @@ layout: page
 slide_id: 4
 ---
 
-## Introduction:
-We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting up the simulation, `leader` takes a random path while changing its speed continuously. In this challenging problem, you are required to use a MDD tool and implement a control model for `follower` such that it always follows `leader` while keeping a safe distance from it. Safe distance is defined by a range from maxDistance to minDistance which can be configured.  Anytime that `follower` is out of safe distance is considered as an unsafe condition and must be avoided.
+# Challenge Problem
 
- To control `follower` safely two set of commands are provided. (1) A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. (2) A set of observation commands that allows to observe the environment and understand the `leader` position and other required information. As shown in the following figure, both of control and monitoring command can be accessed through passing related messages using TCP connections to `controlPort` and `observationPort` port which are configured using configuration file.   
+## Introduction
+We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any situtation in which the `follower` is not within a safe distance is considered unsafe and must be avoided. The safe distance is defined as the range between maxDistance and minDistance can be configured (see Configuration below).  
 
-<img  align="middle" src="assets/images/challangeProblem.png">
+ To control the `follower` two set of commands are provided: (1) A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. (2) A set of observation commands that allows obtaining relevant information such as the position of the the `leader`. As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can also be configured.   
+
+<img  align="middle" src="assets/images/challangeProblem.png"/>
 
 
-
-
-
-## Starting Guide:
+## Starting Guide
 The only prerequisite for using simulator is Java 1.8. Please make sure that Java is installed before start using the simulation. 
 
 ### Download 
-The simlaution package is avaialble for three platfroms (Mac, Windows, Linux), to download please use the following links:
-[Windows](https://drive.google.com/open?id=15htkoZ0PE8GZb0esWiRfhipofP4TVKBi) 
+The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links: 
+
+[Windows](https://drive.google.com/file/d/1EdfnNvvc_n7p-k5k_RN-llJnLnGCnwmg/view?ts=5aff52ee) 
 
 [Linux](https://drive.google.com/open?id=1CUr230c430hgQ4YkVsVK6JDG0pBijkm3) 
 
 [Mac](https://drive.google.com/open?id=1EcfEQ0YkuA8Y9XXrEO9Z2gBtl0YbL-Ag) 
 
-
 ### Running the simulation
-The simulation package is a compressed zip file which  contains the following folders and files. 
+The simulation package is a compressed zip file which contains the following folders and files. 
 Note that depending on your platfrom, only one of the three folders Linux, Mac, and Windows is included. 
 
 ```
@@ -54,9 +53,11 @@ Note that depending on your platfrom, only one of the three folders Linux, Mac, 
 ```
 To run the simulation follow the below steps sequentially:
 
-1. Run the executable simulator. Depending on the used platform it is located at `Linux|Windows|Mac` folder. This will load a simulation environment as shown in the following figure. As discussed it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the simulator listens at TCP port xxx. However, you do not have access to observation commands and you need to start the simulation before using that. 
+1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the simulator listens at TCP port 9998. However, you do not have access to observation commands and you need to start the simulation before using that. 
 
-2. Run the  `UnityObserver.jar` which provides observation commands. by default, it listen on TCP port xxx. 
+&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
+
+2. Run the  `UnityObserver.jar` which provides observation commands. by default, it listen on TCP port 9999. 
 
 3. Now everything is ready to use, and you can start modeling your control. First you need to send a `ready` command to start the simulation. To make sure that simulation is loaded correctly and UnityObserver is started correctly, you can use the simple java program (`RoverController.jar `) that allows controlling the `follower` using the arrow keys. Note that the source code of this program is aviable at `RoverController-Source` and you can review that to get more familiar with supported commands.
 
@@ -118,8 +119,3 @@ ready         | None               | None         | start the simulation | ready
 As discussed `follower` always should keep a safe distance from `leader`. To verify that, the `UnityObserver` always monitor the distance between two rovers and report the time that `follower` is out of the safe distance. You can evaluate your solution based on this data reported by `UnityObserver`.
 
 Note that by seeting  `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
-
-
-
-
-
