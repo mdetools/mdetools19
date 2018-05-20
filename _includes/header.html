@@ -1,45 +1,9 @@
 <header class="site-header">
     <div class="container">
-    <div class="row mt-xs-0 mt-sm-0 mt-md-1 mt-lg-2 mt-xl-3 mb-xs-2 mb-sm-2">
+    <div class="row mt-xs-0 mt-sm-0 mt-md-1 mt-lg-2 mt-xl-1 mb-xs-2 mb-sm-2">
 
-        <!--conference info-->
-        <div class="col-xs-6 col-sm-7 col-md-6 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
-
-            <div class="jumbotron">
-                <img class="img-fluid" src="{{ site.data.conference.logo_path }}">
-                <p class="text-center mt-0">{{ site.data.conference.date }}</p>
-                <p class="text-center"><strong>{{ site.data.conference.full_title }}</strong></p>
-                <p class="text-center mb-0">{{ site.data.conference.location }}</p>
-            </div>
-
-        </div>     
-
+ 
         <!--slide show-->
-        <div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 col-xl-6">
-                
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner" role="listbox">
-                            
-                            {% for slide in site.data.conference.slideshow %}
-                            {% if page.slide_id and page.slide_id  == slide.id %}
-                            <div class="carousel-item active">
-                            {% else %}
-                            <div class="carousel-item">
-                            {% endif %}
-                                <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
-                                <img class="img-fluid" src="{{ slide.image_path }}" alt="{{ slide.description }}">
-                                <div class="carousel-caption d-none d-md-block text-muted">
-                                    <p class="align-bottom"> {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>, 
-                                        under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
-                                    </p>
-                                </div>
-                            </div>
-                            {% endfor %}
-
-                        </div>
-                </div>
-        </div>
     </div>
 
     <div class="row mt-2 mb-2">
