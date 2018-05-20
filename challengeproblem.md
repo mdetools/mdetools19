@@ -93,25 +93,25 @@ Some commands return key-value pairs as results packed in string seperated by co
 
 |Command ID &nbsp;           | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
 :-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
-setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |Rover,setForwardPower(Int)|
-incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |Rover,incrementPower(int) | 
-setLRPower         | Right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |Rover,setLRPower(Int,Int) | 
-brake         | Amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |Rover,brake(Int) | 
-GPSx         | None                | Rover,X coordinate (Real)         | Returns the X coordinate |Rover,GPSx() | 
-GPSy         | None                | Rover,Y coordinate (Real)       	| Returns the Y coordinate |Rover,GPSy() | 
-GPSz         | None                | Rover,Z coordinate (Real)       	| Returns the Z coordinate |Rover,GPSz() | 
-getCompass         | None                | Rover,degrees clockwise of North (Real)        | Returns the degrees clockwise from North |Rover,getCompass()| 
+setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |"Rover,setForwardPower(Int)"|
+incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |"Rover,incrementPower(int)"| 
+setLRPower         | Right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |"Rover,setLRPower(Int,Int)"| 
+brake         | Amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |"Rover,brake(Int)"| 
+GPSx         | None                | Rover,X coordinate (Real)         | Returns the X coordinate |"Rover,GPSx()"| 
+GPSy         | None                | Rover,Y coordinate (Real)       	| Returns the Y coordinate |"Rover,GPSy()"| 
+GPSz         | None                | Rover,Z coordinate (Real)       	| Returns the Z coordinate |"Rover,GPSz()"| 
+getCompass         | None                | Rover,degrees clockwise of North (Real)        | Returns the degrees clockwise from North |"Rover,getCompass()"| 
 
 
 
 ### Observation Commands  
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message &nbsp; |
+|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Request Message &nbsp; |
 :-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
-getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |posx|
-getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the z position of the `leader`   |posx|
-getDistance         | None                 | Distance with  `leader`    (Real) &nbsp;   | Returns the distance between `follower` and `leader` &nbsp; | dist| 
-ready         | None               | None         | Starts the simulation | ready| 
+getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |"posx"|
+getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the z position of the `leader`   |"posy"|
+getDistance         | None                 | Distance with  `leader`    (Real) &nbsp;   | Returns the distance between `follower` and `leader` &nbsp; | "dist"| 
+ready         | None               | None         | Starts the simulation | "ready"| 
 
 
 ## How to evaluate your solution?
