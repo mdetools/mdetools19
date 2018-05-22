@@ -19,7 +19,8 @@ The only prerequisite for using simulator is Java 1.8. Please make sure that Jav
 ### Download 
 The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links: 
 
-[Windows](https://drive.google.com/file/d/1EdfnNvvc_n7p-k5k_RN-llJnLnGCnwmg/view?ts=5aff52ee) 
+
+[Windows](assets/simulator/windows.zip) 
 
 [Linux](https://drive.google.com/file/d/1CUr230c430hgQ4YkVsVK6JDG0pBijkm3/view?usp=sharing) 
 
