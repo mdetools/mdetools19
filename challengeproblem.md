@@ -6,9 +6,16 @@ slide_id: 4
 # Challenge Problem
 
 ## Introduction
-We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any situtation in which the `follower` is not within a safe distance is considered unsafe and must be avoided. The safe distance is defined as the range between maxDistance and minDistance can be configured (see Configuration below).  
+We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any tool that can generate code from models in some modeling language can be used. The generated code can be in any language, as long as it supports TCP socket communication. 
 
- To control the `follower` two set of commands are provided: (1) A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. (2) A set of observation commands that allows obtaining relevant information such as the position of the the `leader`. As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can also be configured.   
+
+To control the `follower` two set of commands are provided: 
+
+1. A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. 
+
+2. A set of observation commands that allows obtaining relevant information such as the position of the the `leader`. 
+
+As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can be configured (see below). During execution, any situtation in which the `follower` is not within a safe distance is considered unsafe and must be avoided. The safe distance is defined as the range between the configuration parameters `maxDistance` and `minDistance` can be configured (see below). 
 
 <img  align="middle" src="assets/images/challangeProblem.png" style="width: 500px;"/>
 
