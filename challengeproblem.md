@@ -20,11 +20,11 @@ The only prerequisite for using simulator is Java 1.8. Please make sure that Jav
 The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links: 
 
 
-[Windows](assets/simulator/windows.zip) 
+[Windows](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Windows.zip) 
 
-[Linux](https://drive.google.com/file/d/1CUr230c430hgQ4YkVsVK6JDG0pBijkm3/view?usp=sharing) 
+[Linux](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Linux.zip) 
 
-[Mac](https://drive.google.com/file/d/1EcfEQ0YkuA8Y9XXrEO9Z2gBtl0YbL-Ag/view) 
+[Mac](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Mac.zip) 
 
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files. 
