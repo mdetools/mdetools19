@@ -6,36 +6,36 @@ slide_id: 4
 # Challenge Problem
 
 ## Introduction
-We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any tool that can generate code from models in some modeling language can be used. The generated code can be in any language, as long as it supports TCP socket communication. 
+We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any tool that can generate code from models in some modeling language can be used. The generated code can be in any language, as long as it supports TCP socket communication.
 
 
-To control the `follower` two set of commands are provided: 
+To control the `follower` two set of commands are provided:
 
-1. A set of control commands that can be used to control the `follower` such as `speedup` and `turn`. 
+1. A set of control commands that can be used to control the `follower` such as `speedup` and `turn`.
 
-2. A set of observation commands that allows obtaining relevant information such as the position of the the `leader`. 
+2. A set of observation commands that allows obtaining relevant information such as the position of the the `leader`.
 
-As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can be configured (see below). During execution, any situtation in which the `follower` is not within a safe distance is considered unsafe and must be avoided. The safe distance is defined as the range between the configuration parameters `maxDistance` and `minDistance` can be configured (see below). 
+As illustrated in the following figure, control and observation commands are issued by sending the corresponding message using TCP connections to the `controlPort` or the `observationPort`. The numbers of these ports can be configured (see below). During execution, any situtation in which the `follower` is not within a safe distance is considered unsafe and must be avoided. The safe distance is defined as the range between the configuration parameters `maxDistance` and `minDistance` can be configured (see below).
 
 <img  align="middle" src="assets/images/challangeProblem.png" style="width: 500px;"/>
 
 
 ## Starting Guide
-The only prerequisite for using simulator is Java 1.8. Please make sure that Java is installed before start using the simulation. 
+The only prerequisite for using simulator is Java 1.8. Please make sure that Java is installed before start using the simulation.
 
-### Download 
-The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links: 
+### Download
+The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links:
 
 
-[Windows](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Windows.zip) 
+[Windows](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Windows.zip)
 
-[Linux](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Linux.zip) 
+[Linux](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Linux.zip)
 
-[Mac](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Mac.zip) 
+[Mac](https://s3.amazonaws.com/challengeproblemmichal/Challenge+problem-Mac.zip)
 
 ### Running the simulation
-The simulation package is a compressed zip file which contains the following folders and files. 
-Note that depending on your platfrom, only one of the three folders Linux, Mac, and Windows is included. 
+The simulation package is a compressed zip file which contains the following folders and files.
+Note that depending on your platfrom, only one of the three folders Linux, Mac, and Windows is included.
 
 ```
 .
@@ -51,21 +51,21 @@ Note that depending on your platfrom, only one of the three folders Linux, Mac, 
 │   └── SocketCommunicator.java
 ├── RoverController.jar                 ---> A simple java program that controls the follower using the keyboard
 ├── Settings
-│   └── config.txt                      ---> Configuration file 
-├── UnityObserver.jar                   ---> A program that provides observation service and commands 
+│   └── config.txt                      ---> Configuration file
+├── UnityObserver.jar                   ---> A program that provides observation service and commands
 └── Windows
-    ├── Challenge-Win64.exe             ---> Executable simulator for Windows 64 
+    ├── Challenge-Win64.exe             ---> Executable simulator for Windows 64
     ├── Challenge-Win64_Data
     └── UnityPlayer.dll
 
 ```
 To run the simulation follow the steps below:
 
-1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the UnityObserver. 
-	
+1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment as shown in the following figure. As discussed, it includes two rovers `leader` and `follower`. When the simulation is loaded, the control commands are ready to use. By default, the controlPort has number 9998. However, to be able to use the observation commands, you need to start the UnityObserver.
+
 	&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
-	
-2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999. 
+
+2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999.
 
 3. Now everything is ready to use, and you can start modeling your control. First, you need to send a `ready` command to start the simulation. To make sure that the simulation and the UnityObserver have started correctly, you can use the simple Java program (`RoverController.jar`) that allows controlling the `follower` using the arrow keys on your keyboard. The source code of this program is aviable in `RoverController-Source` and might be helpful to become more familiar with the available commands.
 
@@ -94,32 +94,35 @@ sampleRate|250|Time in ms between position updates and distance evaluations | No
 
 
 ## Supported Commands
-As discussed, several commands are provided for control and observartion which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `Rover,brake(2)` will invoke the brake command with parameter 2.  Observation messages only contain the id of the command and its parameters (if any), i.e., their format is `commandID([command Parameter]*)`
-Some commands return key-value pairs as results packed in string seperated by commas. Below we decribe the supported commands.
+As discussed, several commands are provided for control and observation which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `Rover,brake(2)` will invoke the brake command with parameter 2.  Observation messages only contain the id of the command and its parameters (if any), i.e., their format is `commandID([command Parameter]*)`
+Some commands return key-value pairs as results packed in string separated by commas. Below we describe the supported commands.
 
-### Control Commands
+### Control Commands 
 
-|Command ID &nbsp;           | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Message |
-:-----------------------| :--------------   |:-------------| ------------                                                | ---------------|
-setForwardPower        | Amount of power (Int)              | None         | Set the power applied to all wheels   |"Rover,setForwardPower(Int)"|
-incrementPower         | Amount of power (Int)              | None         | Increment the power applied to all wheels |"Rover,incrementPower(int)"| 
-setLRPower         | Right power, left power     (Int,Int)            | None         | Set the power of the left and right wheels |"Rover,setLRPower(Int,Int)"| 
-brake         | Amount of power    (Int)            | None         | Apply the amount of brake power to all wheels |"Rover,brake(Int)"| 
-GPSx         | None                | Rover,X coordinate (Real)         | Returns the X coordinate |"Rover,GPSx()"| 
-GPSy         | None                | Rover,Y coordinate (Real)       	| Returns the Y coordinate |"Rover,GPSy()"| 
-GPSz         | None                | Rover,Z coordinate (Real)       	| Returns the Z coordinate |"Rover,GPSz()"| 
-getCompass         | None                | Rover,degrees clockwise of North (Real)        | Returns the degrees clockwise from North |"Rover,getCompass()"| 
+  
+|Message Format &nbsp;           | Return Message &nbsp;       | Description   &nbsp; |
+:-----------------------| :---------------------------   |:------------- |
+"Rover,setForwardPower(\<Int\>)" &nbsp;  | None &nbsp; | Set the power applied to all wheels as a percentage of max power (-100 to 100) |
+"Rover,incrementPower(\<Int\>)"   &nbsp;      | None         | Increment the power applied to all wheels as a percentage of max power (-100 to 100)|
+"Rover,setLRPower(\<Int\>,\<Int\>)"         | None         | Set the power of the left and right wheels as percentages of max power (-100 to 100). First <Int> is for left side and the second for right side|
+"Rover,brake(\<Int\>)"         | None         | Apply the amount of brake power to all wheels as a percentage of max brake force (0-100) |
+"Rover,GPSx()"         | "Rover,\<Real\>"          | Returns the X coordinate as a Real value|
+"Rover,GPSy()"         | "Rover,\<Real\>"        	| Returns the Y coordinate as a Real value|
+"Rover,GPSz()"         | "Rover,\<Real\>"       	| Returns the Z coordinate as a Real value|
+"Rover,getCompass()"         | "Rover,\<Real\>"    | Returns the degrees clockwise from North as a Real value|
+
+
 
 
 
 ### Observation Commands  
 
-|Command ID            | Parameters and types &nbsp;       | Returns and types &nbsp;    | Description   &nbsp;                                        | Sample Request Message &nbsp; |
-:-----------------------| :--------------   |:------------- | ------------                                                | ---------------|
-getTargetX        | None               | x position of  `leader`     (Real)  | Returns the x position of the `leader`   |"posx"|
-getTargetyZ       | None               | z position of  `leader`       (Real) | Returns the z position of the `leader`   |"posy"|
-getDistance         | None                 | Distance with  `leader`    (Real) &nbsp;   | Returns the distance between `follower` and `leader` &nbsp; | "dist"| 
-ready         | None               | None         | Starts the simulation | "ready"| 
+|Message Format   &nbsp;           | Return Message &nbsp;       | Description   &nbsp;                                        |
+:-----------------------| :--------------   |:------------- |
+"posx"        | "\<Real\>"               | Returns the x position of the `leader` as a Real value  |
+"posz"       | "\<Real\>"              | Returns the z position of the `leader` as a Real value  |
+"dist"         | "\<Real\>"                 | Returns the distance between `follower` and `leader` as a Real value &nbsp; |
+"ready"         | None               | Indicates your program is ready, and begins the simulation |
 
 
 ## How to evaluate your solution?

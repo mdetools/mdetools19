@@ -86,7 +86,8 @@ accurate, attractive, and polished way. Submissions
 should be accompanied by a short summary containing
 (1) a description of the contents of the tutorial including
 the tool and task(s) chosen, and (2) a URL of the web
-location where the tutorial can be accessed and viewed. </li>
+location where the tutorial can be accessed and viewed. Guidelines for 
+submitting video tutorials are available <a href="./videoguideline.html"> here </a>.  </li>
 
 </ol>
 
