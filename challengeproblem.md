@@ -103,7 +103,7 @@ Several commands are provided for control and observation which can be used by s
 :-----------------------| :---------------------------   |:------------- |
 "Rover,setForwardPower(\<Int\>)" | None | Set the power applied to all wheels as a percentage of max power (-100 to 100) |
 "Rover,incrementPower(\<Int\>)"  | None         | Increment the power applied to all wheels as a percentage of max power (-100 to 100)|
-"Rover,setLRPower(\<Int\>,\<Int\>)" &nbsp;     | None         | Set the power of the left and right wheels as percentages of max power (-100 to 100). First <Int> is for left side and the second for right side|
+"Rover,setLRPower(\<Int\>,\<Int\>)" &nbsp; | None         | Set the power of the left and right wheels as percentages of max power (-100 to 100). First <Int> is for left side and the second for right side|
 "Rover,brake(\<Int\>)"         | None         | Apply the amount of brake power to all wheels as a percentage of max brake force (0-100) |
 "Rover,GPSx()"         | "Rover,\<Real\>" &nbsp;         | Returns the X coordinate as a Real value|
 "Rover,GPSy()"         | "Rover,\<Real\>"        	| Returns the Y coordinate as a Real value|
