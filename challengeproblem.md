@@ -94,19 +94,18 @@ sampleRate|250|Time in ms between position updates and distance evaluations | No
 
 
 ## Supported Commands
-Several commands are provided for control and observation which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `"Rover,brake(2)"` will invoke the brake command with parameter 2 and result in the brake being applied to all wheels with a power of 2%.  
-Observation messages are simpler and consist only of one of four strings (`"posx"`, `"posz"`, `"dist"`, and `"ready"'). Three of these return a string containing a real indicating the x position, the y position, or the distance of the leader rover, respectively. Below we describe the supported commands.
+Several commands are provided for control and observation which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `"Rover,brake(2)"` will invoke the brake command with parameter 2 and result in the brake being applied to all wheels with a power of 2%. Observation messages are simpler and consist only of one of four strings (`"posx"`, `"posz"`, `"dist"`, and `"ready"`). Three of these return a string containing a real indicating the x position, the y position, or the distance of the leader rover, respectively. Below we describe the supported commands.
 
 ### Control Commands 
 
   
 |Message Format &nbsp;           | Return Message &nbsp;       | Description   &nbsp; |
 :-----------------------| :---------------------------   |:------------- |
-"Rover,setForwardPower(\<Int\>)" &nbsp;  | None &nbsp; | Set the power applied to all wheels as a percentage of max power (-100 to 100) |
-"Rover,incrementPower(\<Int\>)"   &nbsp;      | None         | Increment the power applied to all wheels as a percentage of max power (-100 to 100)|
+"Rover,setForwardPower(\<Int\>)" | None | Set the power applied to all wheels as a percentage of max power (-100 to 100) |
+"Rover,incrementPower(\<Int\>)"  | None         | Increment the power applied to all wheels as a percentage of max power (-100 to 100)|
 "Rover,setLRPower(\<Int\>,\<Int\>)" &nbsp;     | None         | Set the power of the left and right wheels as percentages of max power (-100 to 100). First <Int> is for left side and the second for right side|
 "Rover,brake(\<Int\>)"         | None         | Apply the amount of brake power to all wheels as a percentage of max brake force (0-100) |
-"Rover,GPSx()"         | "Rover,\<Real\>"          | Returns the X coordinate as a Real value|
+"Rover,GPSx()"         | "Rover,\<Real\>" &nbsp;         | Returns the X coordinate as a Real value|
 "Rover,GPSy()"         | "Rover,\<Real\>"        	| Returns the Y coordinate as a Real value|
 "Rover,GPSz()"         | "Rover,\<Real\>"       	| Returns the Z coordinate as a Real value|
 "Rover,getCompass()"         | "Rover,\<Real\>"    | Returns the degrees clockwise from North as a Real value|
