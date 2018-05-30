@@ -21,7 +21,7 @@ As illustrated in the following figure, control and observation commands are iss
 
 
 ## Starting Guide
-The only prerequisite for using simulator is Java 1.8. Please make sure that Java is installed before start using the simulation.
+The only prerequisite for using simulator is Java 1.7.0_80 or higher. Please make sure that Java is installed before start using the simulation.
 
 ### Download
 The simulation package is avaialble for three platforms (Mac, Windows, Linux). To download please use the following links:
@@ -94,7 +94,9 @@ sampleRate|250|Time in ms between position updates and distance evaluations | No
 
 
 ## Supported Commands
-Several commands are provided for control and observation which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string. The format of a control message is `"Rover,"+commandID([command Parameter]*)`. For example, there is a `brake` command that accepts one integer parameter, so sending the string  `"Rover,brake(2)"` will invoke the brake command with parameter 2 and result in the brake being applied to all wheels with a power of 2%. Observation messages are simpler and consist only of one of four strings (`"posx"`, `"posz"`, `"dist"`, and `"ready"`). Three of these return a string containing a real indicating the x position, the y position, or the distance of the leader rover, respectively. Below we describe the supported commands.
+Several commands are provided for control and observation which can be used by sending a message to the corresponding TCP port. Each message is an ASCII string starting with `"Rover"` followed by a comma, the name of the command and a parameter list. The parameters are enclosed in parentheses and separated by commas. The number of parameters ranges between zeros and two. For example, the `brake` command accepts one integer parameter, so sending the string  `"Rover,brake(2)"` will invoke the brake command with parameter 2 and result in the brake being applied to all wheels with a power of 2%. 
+Two commands are available to determine the position of the `leader`. These commands take no parameters and are also sent in a string. For instance, sending the message `"Leader,GPS()"` to the observation port will result in a return message `"Leader,\<posx\>,\<posz\>;", i.e., a string `"Leader"` followed by two Real numbers (type double) indicating the x and z coordinates of the leader (since rovers are driving on a flat plane, the y coordinate is always zero and thus omitted). The command `ready` starts the simulation. 
+Below we describe the supported commands.
 
 ### Control Commands 
 
@@ -105,12 +107,8 @@ Several commands are provided for control and observation which can be used by s
 "Rover,incrementPower(\<Int\>)"  | None         | Increment the power applied to all wheels as a percentage of max power (-100 to 100)|
 "Rover,setLRPower(\<Int\>,\<Int\>)" &nbsp; | None         | Set the power of the left and right wheels as percentages of max power (-100 to 100). First <Int> is for left side and the second for right side|
 "Rover,brake(\<Int\>)"         | None         | Apply the amount of brake power to all wheels as a percentage of max brake force (0-100) |
-"Rover,GPSx()"         | "Rover,\<Real\>" &nbsp;         | Returns the X coordinate as a Real value|
-"Rover,GPSy()"         | "Rover,\<Real\>"        	| Returns the Y coordinate as a Real value|
-"Rover,GPSz()"         | "Rover,\<Real\>"       	| Returns the Z coordinate as a Real value|
-"Rover,getCompass()"         | "Rover,\<Real\>"    | Returns the degrees clockwise from North as a Real value|
-
-
+"Rover,GPS()"         | "Rover,\<posx\>,\<posz\>" &nbsp;         | Returns the x and z coordinates of the `follower` as a Real number  |
+"Rover,getCompass()"         | "Rover,\<Real\>"    | Returns the degrees clockwise from North as a Real number |
 
 
 
@@ -118,10 +116,9 @@ Several commands are provided for control and observation which can be used by s
 
 |Message Format   &nbsp;           | Return Message &nbsp;       | Description   &nbsp;                                        |
 :-----------------------| :--------------   |:------------- |
-"posx"        | "\<Real\>"               | Returns the x position of the `leader` as a Real value  |
-"posz"       | "\<Real\>"              | Returns the z position of the `leader` as a Real value  |
-"dist"         | "\<Real\>"                 | Returns the distance between `follower` and `leader` as a Real value &nbsp; |
-"ready"         | None               | Indicates your program is ready, and begins the simulation |
+"Leader,GPS()"        | "Leader,\<posx\>,\<posz\>;"               | Returns the x and y coordinates of the `leader` as Reals |
+"Leader,Distance()"         | "Leader,\<dist\>"                 | Returns the distance between `follower` and `leader` as a Real &nbsp; |
+"ready"         | null               | Indicates your program is ready, and begins the simulation |
 
 
 ## How to evaluate your solution?
