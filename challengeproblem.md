@@ -128,3 +128,7 @@ Below we describe the supported commands.
 As mentioned, the `follower` should always keep a safe distance from the `leader`. To enforce this rule, the `UnityObserver` always monitors the distance between the two rovers and reports the amount of time that the `follower` violates it, i.e., is out of the safe distance. You can evaluate your solution based on this data reported by the `UnityObserver`.
 
 Note that by setting `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
+
+## How to ask for additional help?
+Users encountering technical difficulties during the use of the simulator can open a new issue at 
+[https://github.com/mdetools/mdetools18/issues](https://github.com/mdetools/mdetools18/issues).
