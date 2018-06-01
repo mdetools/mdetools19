@@ -130,5 +130,4 @@ As mentioned, the `follower` should always keep a safe distance from the `leader
 Note that by setting `straightPercent` to `0`, `leader` will take a straight path, hence following it would be an easy problem to solve. We expect your solution work with different values for `straightPercent`.
 
 ## How to ask for additional help?
-Users encountering technical difficulties during the use of the simulator can open a new issue at 
-[https://github.com/mdetools/mdetools18/issues](https://github.com/mdetools/mdetools18/issues).
+Users encountering technical difficulties during the use of the simulator can open a new issue at [https://github.com/mdetools/mdetools18/issues](https://github.com/mdetools/mdetools18/issues).
