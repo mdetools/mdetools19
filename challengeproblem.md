@@ -1,4 +1,4 @@
----
+2---
 layout: page
 slide_id: 4
 ---
@@ -65,9 +65,13 @@ To run the simulation follow the steps below:
 
 	&nbsp; &nbsp; &nbsp;  <img  align="middle" src="assets/images/simulation-example.png" style="width: 500px;"  />
 
-2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999.
+2. To start the observer, run the  `UnityObserver.jar`. Now, observation commands are available. By default, the observationPort has number 9999. If you're running macOS and this step gives you trouble, the discussion in <a href="https://github.com/mdetools/mdetools18/issues/3">issue 3</a> may be helpful.
 
 3. Now everything is ready to use, and you can start modeling your control. First, you need to send a `ready` command to start the simulation. To make sure that the simulation and the UnityObserver have started correctly, you can use the simple Java program (`RoverController.jar`) that allows controlling the `follower` using the arrow keys on your keyboard. The source code of this program is aviable in `RoverController-Source` and might be helpful to become more familiar with the available commands.
+
+4. If you encounter problems during any of these steps, please check the
+<a href="https://github.com/mdetools/mdetools18/issues">issue tracker</a>
+for more information. If you cannot find an answer, open a new issue. 
 
 ## Configuration
 The simulation can be configured using the parameters inside the `Settings/config.txt`. You may need to change this configuration in special cases such as changing TCP ports. The main configuration and their default value are described below.
