@@ -56,6 +56,8 @@ deadlines:
     timezone: PDT
     text: Notification of acceptance
     pass_due: False
+  - date: 2018-10-15
+    text: Workshop
 news:
   - date: 2018-04-18
     text: Website online
