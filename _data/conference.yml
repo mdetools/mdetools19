@@ -50,7 +50,7 @@ navbar:
 deadlines:
   - date: 2018-7-24 23:59:59 -0700
     timezone: PDT
-    text: Submission deadline
+    text: Submission deadline (extended)
     pass_due: False
   - date: 2018-8-17 23:59:59 -0700
     timezone: PDT
