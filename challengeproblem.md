@@ -125,7 +125,7 @@ Below we describe the supported commands.
 :-----------------------| :--------------   |:------------- |
 "Leader,GPS()"        | "Leader,\<posx\>,\<posz\>;"               | Returns the x and z coordinates of the `leader` as Real numbers |
 "Leader,Distance()"         | "Leader,\<dist\>;"                 | Returns the distance between `follower` and `leader` as a Real number &nbsp; |
-"ready"         | null               | Indicates your program is ready, and begins the simulation |
+"ready"         | "Simulation Started!"               | Indicates your program is ready, and begins the simulation |
 
 
 ## How to evaluate your solution?
