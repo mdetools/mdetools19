@@ -16,8 +16,12 @@ although the workshop is now over. In other words, submissions are still accepte
 and will be made publicly available together with the submissions presented at
 MDETools'18 on these pages.
 
+To allow a broad comparison, <i>any</i> language and supporting development tool can be
+used to solve the challenge, including general-purpose programming languages (such as Python
+or Java) and modeling languages (such as StateFlow/Simulink, UML, LabView, etc).
+
 ## Submission instructions
-Once you are done with the challenge described below, please send the following to
+Once you are done with the challenge described below. please send the following to
 dingel@cs.queensu.ca:
 
 1. Description of model in format readable by the tool:
