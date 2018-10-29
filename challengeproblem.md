@@ -5,7 +5,53 @@ slide_id: 4
 
 # Challenge Problem
 
-## Introduction
+## Preamble
+The challenge problem described below was used for the MDETools Workshop in 2018
+(original CfP can be found here (https://mdetools.github.io/mdetools18/cfp.html).
+Descriptions of the six accepted submissions can be found in the MODELS'18
+Companion Proceedings to be published with CEUR.
+
+Due to the success of the challenge, the solication of submissions is kept open,
+although the workshop is now over. In other words, submissions are still accepted
+and will be made publicly available together with the submissions presented at
+MDETools'18 on these pages.
+
+## Submission instructions
+Once you are done with the challenge described below, please send the following to
+dingel@cs.queensu.ca:
+
+1. Description of model in format readable by the tool:
+I.e., the file(s) that your MDE tool creates when you export or save
+the model. Any user of the tool should be able to import (load) this
+file (these files) and thus be able to inspect the model and use it
+to solve the challenge.
+
+2. Installation instructions:
+Please send links to pages describing how to obtain, install, and
+use your tool. 
+
+3. Description of model in format readable by human:
+I.e., a description of the model in a format that allows the model
+to be read by humans without the use of the tool.
+
+For some tools, the human-readable description might be the same
+as the tool-readable description (e.g., for models expressed a
+textual notation or DSL). Some other tools (e.g., tools
+that persist the model in XMI), however, may not persist the
+model in a human-readable format. In that case, we would like to
+ask you to prepare a screencast (video) describing the model.
+
+In the screencast, you can use your tool to traverse the model
+and show the elements it consists of. The description should
+cover all user-created elements including, e.g., action code on
+transitions in state machine models. Narration (i.e., audio) is
+optional. A partial list of tools that can be used to create
+screencasts can be found here 
+(http://mase.cs.queensu.ca/mdetools/index.php?id=video-tutorial-submission)
+Please make the screencast publicly available (by, e.g., uploading
+it to YouTube) and send us the link.
+
+## Overview of challenge problem
 We have created a simulated environment that contains two rovers called `leader` and `follower`. Upon starting the simulation, `leader` takes a random path while changing its speed continuously. The goal of the challenge problem is to use an MDD tool and design a model for `follower` such that (the code generated from) the model causes the `follower` to follow `leader` while always staying at a safe distance from it. Any tool that can generate code from models in some modeling language can be used. The generated code can be in any language, as long as it supports TCP socket communication.
 
 
