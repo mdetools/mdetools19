@@ -7,7 +7,7 @@ slide_id: 4
 
 ## Preamble
 The challenge problem described below was used for the MDETools Workshop in 2018
-(original CfP can be found here (https://mdetools.github.io/mdetools18/cfp.html).
+(original CfP can be found [here] (https://mdetools.github.io/mdetools18/cfp.html).
 Descriptions of the six accepted submissions can be found in the MODELS'18
 Companion Proceedings to be published with CEUR.
 
@@ -46,7 +46,7 @@ and show the elements it consists of. The description should
 cover all user-created elements including, e.g., action code on
 transitions in state machine models. Narration (i.e., audio) is
 optional. A partial list of tools that can be used to create
-screencasts can be found here 
+screencasts can be found [here]
 (http://mase.cs.queensu.ca/mdetools/index.php?id=video-tutorial-submission)
 Please make the screencast publicly available (by, e.g., uploading
 it to YouTube) and send us the link.
