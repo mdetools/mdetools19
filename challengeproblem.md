@@ -7,9 +7,9 @@ slide_id: 4
 
 ## Preamble
 The challenge problem described below was used for the MDETools Workshop in 2018
-(original CfP can be found <a href="https://mdetools.github.io/mdetools18/cfp.html">here</a>)
+(original CfP can be found <a href="https://mdetools.github.io/mdetools18/cfp.html">here</a>).
 Descriptions of the six accepted submissions can be found in the MODELS'18
-Companion Proceedings to be published with CEUR.
+Companion Proceedings published with CEUR.
 
 Due to the success of the challenge, the solication of submissions is kept open,
 although the workshop is now over. In other words, submissions are still accepted
