@@ -47,6 +47,10 @@ navbar:
     label: Registration
     path: ./registration.html
     visible: False
+  - id: 7
+    label: Challange Problem Solutions
+    path: ./accepted.html
+    visible: False
 deadlines:
   - date: 2018-7-24 23:59:59 -0700
     timezone: PDT
