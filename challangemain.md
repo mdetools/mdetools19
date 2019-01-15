@@ -4,7 +4,7 @@ slide_id: 4
 ---
 
 #### Description 
-Detailed description of the challenge problem can be found [here]().
+Detailed description of the challenge problem can be found <a href="./challengeproblem.html">here </a> .
 
 #### Accepted Solutions
 
