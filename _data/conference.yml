@@ -48,7 +48,7 @@ navbar:
     path: ./registration.html
     visible: False
   - id: 7
-    label: Challange Problem
+    label: Challenge Problem
     path: ./challangemain.html
     visible: True
 deadlines:
