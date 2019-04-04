@@ -16,7 +16,7 @@ Detailed description of the challenge problem can be found <a href="./challengep
 [Scenario Tools](http://scenariotools.org/)|[Modeling and  programming a leader-lollower challenge problem with scenario-based tools](http://ceur-ws.org/Vol-2245/mdetools_paper_8.pdf) <br/> Joel Greenyer, Michael Bar-Sinai, Gera Weiss, Aviran Sadon and Assaf Marron.| [[Solution]]() 
 [Umple](https://cruise.eecs.uottawa.ca/umple/)|[Applying Umple to the rover control challenge problem: A case study in model-driven engineering ](http://ceur-ws.org/Vol-2245/mdetools_paper_9.pdf) <br/> Timothy Lethbridge and Abdulaziz Algablan.| [[Models]](https://github.com/umple/roverChallenge/tree/master/) [[Instructions]](https://cruise.eecs.uottawa.ca/umpleonline/download_eclipse_umple_plugin.shtml)
 [xtUML](https://xtuml.org/)|[Navigating the rover with xtUML ](http://ceur-ws.org/Vol-2245/mdetools_paper_10.pdf)  <br/> Keith Brown.| [[Models]](https://github.com/xtuml/models/tree/master/applications/rover)|  
-[Embedded Engineer](https://www.lieberlieber.com/)|[Rover Controller with Embedded Engineer ](https://blog.lieberlieber.com/2018/11/21/lieberlieber-presents-embedded-engineer-at-models-2018-conference/)  <br/> Christian Doppler.| [[Demo]](https://youtu.be/_9G3tLn1ejg)|   
+[Embedded Engineer](https://www.lieberlieber.com/)|[Rover Controller with Embedded Engineer ](https://blog.lieberlieber.com/2018/11/21/lieberlieber-presents-embedded-engineer-at-models-2018-conference/)  <br/> LieberLieber Software GmbH and TU Vienna.| [[Demo]](https://youtu.be/_9G3tLn1ejg)|   
 
 
 
