@@ -1,11 +1,11 @@
-full_title: Second Workshop on Model-Driven Engineering Tools
-short_title: MDETools'18
+full_title: Third Workshop on Model-Driven Engineering Tools
+short_title: MDETools'19
 email: mojtaba@cs.queensu.ca
 description: > # this means to ignore newlines until "baseurl:"
   HotWeb is a forum bringing together researchers and practitioners interested 
   in the design, implementation, and evaluation of Internet systems and applications. 
-location: Copenhagen, Denmark
-date: 15 October 2018
+location: Munich, Germany
+date: 15 September 2018
 logo_path: ./assets/images/MDEtools.png
 slideshow:
   - id: 0
@@ -26,11 +26,11 @@ navbar:
   - id: 1
     label: Committees
     path: ./committees.html
-    visible: True
+    visible: False
   - id: 2
     label: Call for Papers
     path: ./cfp.html
-    visible: True
+    visible: False
   - id: 3
     label: Submission
     path: ./submission.html
@@ -38,7 +38,7 @@ navbar:
   - id: 4
     label: Program
     path: ./program.html
-    visible: True
+    visible: False
   - id: 5
     label: Venue
     path: ./venue.html
@@ -50,20 +50,20 @@ navbar:
   - id: 7
     label: Challenge Problem
     path: ./challangemain.html
-    visible: True
+    visible: false
 deadlines:
-  - date: 2018-7-24 23:59:59 -0700
-    timezone: PDT
-    text: Submission deadline (extended)
+  - date: TBD
+    timezone: 
+    text: Submission deadline
     pass_due: False
-  - date: 2018-8-17 23:59:59 -0700
-    timezone: PDT
+  - date: TBD
+    timezone: 
     text: Notification of acceptance
     pass_due: False
-  - date: 2018-10-15
+  - date: TBD
     text: Workshop
 news:
-  - date: 2018-04-18
+  - date: 2019-04-29
     text: Website online
 #sponsors:
 #  - name: Adobe
