@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   HotWeb is a forum bringing together researchers and practitioners interested 
   in the design, implementation, and evaluation of Internet systems and applications. 
 location: Munich, Germany
-date: 15 September 2018
+date: September 15, 16, or 17, 2019
 logo_path: ./assets/images/MDEtools.png
 slideshow:
   - id: 0
@@ -26,11 +26,11 @@ navbar:
   - id: 1
     label: Committees
     path: ./committees.html
-    visible: False
+    visible: True
   - id: 2
     label: Call for Papers
     path: ./cfp.html
-    visible: False
+    visible: True
   - id: 3
     label: Submission
     path: ./submission.html
@@ -49,22 +49,27 @@ navbar:
     visible: False
   - id: 7
     label: Challenge Problem
-    path: ./challangemain.html
-    visible: false
+    path: ./challengeproblem.html
+    visible: True
+  - id: 8
+    label: Previous editions
+    path: ./Previousversions.html
+    visible: True
 deadlines:
-  - date: TBD
+  - date: (TBA
     timezone: 
     text: Submission deadline
     pass_due: False
-  - date: TBD
+  - date:    (TBA  
     timezone: 
     text: Notification of acceptance
     pass_due: False
-  - date: TBD
+  - date: (TBA
     text: Workshop
 news:
   - date: 2019-04-29
     text: Website online
+
 #sponsors:
 #  - name: Adobe
 #    logo_path: ./assets/images/sponsors/adobe-logo.png
@@ -81,6 +86,10 @@ news:
 #  twitter_link:
 organizing_committees:
   - role: Primary Contact
+    name: Jean-Philippe Babau, UBO, France
+    org: 
+    homepage:
+  - role: Primary Contact
     name: Mojtaba Bagherzadeh, Queen’s University, Canada
     org: mojtaba@cs.queensu.ca
     homepage: http://flux.cs.queensu.ca/mase/member/bagherzadeh/
@@ -92,10 +101,6 @@ organizing_committees:
     name: Juergen Dingel, Queen’s University, Canada
     org: dingel@cs.queensu.ca (Primary contact)
     homepage: http://research.cs.queensu.ca/home/dingel/
-  - role: Primary Contact
-    name: Michalis Famelis, University of Montreal, Canada
-    org: famelis@iro.umontreal.ca
-    homepage: https://michalis.famelis.info/
   - role: Primary Contact
     name: Antonio Garcia-Dominguez, Aston University, UK
     org: a.garcia-dominguez@aston.ac.uk
@@ -128,11 +133,8 @@ organizing_committees:
 #    org: TBA
 #    homepage: TBA
 technical_program_committees:
-- name: Benny Akesson, TNO, The Netherlands
 - name:  Ludovic Apvrille, Telecom Paristech, France
-- name: Jean-Philippe Babau, University of Brest, France
 - name: Omar Badreddin, University of Texas at El Paso, USA
-- name: Steffen Becker, University of Stuttgart, Germany
 - name: Reda Bendraou, Laboratoire d'Informatique de Paris 6, France
 - name: Federico Ciccozzi, Malardalen University, Sweden
 - name: Cedric Dumoulin, University of Lille, France
@@ -140,12 +142,17 @@ technical_program_committees:
 - name: Romina Eramo, University of L'Aquila, Italy
 - name: Esther Guerra, Universidad Autonoma of Madrid, Spain
 - name: Joel Greenyer, University of Hannover, Germany
-- name: Philip Langer, EclipseSource, Germany
-- name: Tanja Mayerhofer, Vienna University of Technology, Austria
+- name: Timothy Lethbridge, University of Ottawa, Canada
+- name: Grischa Liebel, Reykjavik University, Iceland
+- name: Brice Morin, INTEF Digital, Norway
+- name: Levi Lucio, Fortiss, Germany
+- name: Krishna Narasimhan, Itemis, Germany
 - name: Shiva Nejati, University of Luxembourg, Luxembourg
-- name: Cortland Starrett, Onefact, USA
-- name: Matthew Stephan, Miami University, USA
+- name: Eric Rapos, Miami University, USA
+- name: Adrian Rutle, Western Norway University of Applied Sciences, Norway
+- name: Daniel Siegl, LieberLieber Software, Austria
 - name: Eugene Syriani, University of Montreal, Canada
-- name: Tamas Szabo, TU Delft, The Netherlands and itemis, Germany
+- name: JÈrÈmie TatibouÎt, CEA, France
 - name: Matthias Tichy, University of Ulm, Germany
-- name: Thomas Vogel, Humboldt-Universitaet zu Berlin, Germany
+- name: Manuel Wimmer, JKU Linz, Austria
+- name: Matthias Tichy, University of Ulm, Germany
