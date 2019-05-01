@@ -53,7 +53,7 @@ navbar:
     visible: True
   - id: 8
     label: Previous editions
-    path: ./Previousversions.html
+    path: ./previousversions.html
     visible: True
 deadlines:
   - date: (TBA
