@@ -75,20 +75,12 @@ Submission deadline: TBD.
 Author notification: TBD.
 
 ### Format and size limits
-All submitted artifacts must
-use English. All textual documents must adhere to the [Springer LNCS formatting guidelines](http://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines). Research
-papers (Category I), comparisons and evaluations of
-MDE tools (Category II), position papers (Category III),
-and descriptions of tool use in the context of the challenge
-problem (Category IV), should be between 6 and 10 pages in
-length. Video tutorials should not be longer than 10 minutes;
-the accompanying summary should not exceed 2 pages.
+Submitted artifacts must be in English. Papers
+must be between 6 and 10 pages in length, and follow the <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE
+manuscript template.
 
 ### Publication 
-Accepted papers and summaries of accepted
-video tutorials will be published in the workshop
-proceedings which will be made available using the openaccess
-publication service CEUR [ceur-ws.org](http://ceur-ws.org).
+Accepted papers will appear in the workshop proceedings published with IEEE.
 
 
 ### Evaluation process and criteria
@@ -98,12 +90,7 @@ PC members. Acceptance decisions will be made based on
 standard criteria such as correctness, clarity, and originality,
 but also on the potential of the work to stimulate discussion,
 inspire participants, and contribute to the success of the
-workshop. Moreover, video tutorials should convey knowledge
-about how to use an MDE tool for a particular task or set of
-tasks in an accurate, clear, succinct, and easy-to-follow way;
-chosen tasks should be non-trivial and relevant to potential
-users; the tutorial should be attractive and polished and use
-the tutorial format effectively.
+workshop. 
 Submissions with workshop organizers as (co-)authors will
 be allowed, but care will be taken to enforce the [standard conflict rules](http://www.sigsoft.org/about/policies/pc-policy.htm) when assigning papers for review, collecting reviews,
 and discussing submissions.
