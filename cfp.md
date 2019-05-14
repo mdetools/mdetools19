@@ -80,7 +80,8 @@ must be between 6 and 10 pages in length, and follow the <a href="https://www.ie
 manuscript template.
 
 ### Publication 
-Accepted papers will appear in the workshop proceedings published with IEEE.
+Accepted papers will appear in the workshop proceedings published with IEEE and will be available
+at the time of the workshop.
 
 
 ### Evaluation process and criteria

@@ -56,13 +56,21 @@ navbar:
     path: ./previousversions.html
     visible: True
 deadlines:
-  - date: (TBA
-    timezone: 
+  - date: June 28, 2019
+    timezone: (AoE)
+    text: Abstract submission deadline
+    pass_due: False
+  - date: July 5, 2019
+    timezone: (AoE)
     text: Submission deadline
     pass_due: False
-  - date:    (TBA  
-    timezone: 
+  - date:   July 26, 2019
+    timezone: (AoE)
     text: Notification of acceptance
+    pass_due: False
+  - date: August 2, 2019
+    timezone: (AoE)
+    text: Camera ready version
     pass_due: False
   - date: (TBA
     text: Workshop
