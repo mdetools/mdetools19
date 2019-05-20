@@ -120,7 +120,7 @@ player2Port|9999|TCP port to control player2 | None
 simulationIP|127.0.0.1|IP address that the simulation and the UnityObserver are running on | None
 gameTime|240s|Total execution time of the simulation in seconds | None
 possessionTimer|10s|The maximum time in seconds that a player can hold the ball with suction| None
-penaltyTime|5s|The time period in seconds that a player cannot be moved as a penalty for violation of the possessionTime.|None
+penaltyTime|5s|The time period in seconds that a player cannot be moved as a penalty for violation of the possessionTime|None
 
 
 
