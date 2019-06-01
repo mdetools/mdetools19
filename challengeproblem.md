@@ -73,7 +73,7 @@ The only prerequisite for using the simulator is Java 1.7.0_80 or higher. Please
 The simulation package is available for three platforms (Mac, Windows, Linux). To download, please use the following link:
 
 
-[Simulation Package](https://drive.google.com/open?id=12xdPXrGy4EIUoaAbDvC7JUlcitPe9tMc)
+[Simulation Package](https://drive.google.com/open?id=1JK-zlulIeGXPwfDfDF4E9YUEnLKRVIZh)
 
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files.
@@ -129,8 +129,8 @@ The simulation can be configured using the parameters inside the `Setting.txt`. 
 {:.mbtablestyle}
 |Parameter &nbsp;            | Default Value &nbsp; | Description &nbsp; | Hints
 -----------------------| --------------       |-------------
-player1Port|9998|TCP port to control player1 | None
-player2Port|9999|TCP port to control player2 | None
+player1Port|9001|TCP port to control player1 | None
+player2Port|9004|TCP port to control player2 | None
 simulationIP|127.0.0.1|IP address that the simulation and the UnityObserver are running on | None
 gameTime|240s|Total execution time of the simulation in seconds | None
 possessionTimer|10s|The maximum time in seconds that a player can hold the ball with suction| None
