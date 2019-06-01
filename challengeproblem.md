@@ -5,7 +5,7 @@ slide_id: 4
 
 
 ## Overview of the Challenge Problem
-We have created a simulation of a simplified RoboCup-type game inspired by [https://ssim.robocup.org/](https://ssim.robocup.org/) as shown in the following figure. The simulation contains a `ball` and two players  `red (player1)` and `blue (player2)` who compete against each other. By default, the `blue` player can be controlled by the keyboard or by the simulation where its movements are random. The challenge consists of creating a model to control the `red` player. The objective of each player is to shoot as many goals as possible. Note that the coordinates of the field are shown in the corners of the figure.
+We have created a simulation of a simplified RoboCup-type game inspired by [https://ssim.robocup.org/](https://ssim.robocup.org/) as shown in the following figure. The simulation contains a `ball` and two players  `red (player2)` and `blue (player1)` who compete against each other. By default, the `blue` player can be controlled by the keyboard or by the simulation where its movements are random. The challenge consists of creating a model to control the `red` player. The objective of each player is to shoot as many goals as possible. Note that the coordinates of the field are shown in the corners of the figure.
 
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img  align="middle" src="assets/images/robosoccer.png" style="width: 500px;"/>
@@ -22,7 +22,7 @@ We have created a simulation of a simplified RoboCup-type game inspired by [http
 
 ### Communication Flow
 
-As illustrated in the following figure, commands can be invoked by sending the corresponding message using TCP connections to the tcp ports. To control red player (player1), the player1 port (9001) should be used. Note that the command for getting the ball's position (`ball,GPs()`) can be sent in both ports. The port numbers can be configured using the configuration file as will be discussed later.
+As illustrated in the following figure, commands can be invoked by sending the corresponding message using TCP connections to the tcp ports. To control red player (player2), the player2 port (9004) should be used. Note that the command for getting the ball's position (`ball,GPs()`) can be sent in both ports. The port numbers can be configured using the configuration file as will be discussed later.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img  align="middle" src="assets/images/simulation-structure.png" style="width:300px;"/>
 
@@ -115,7 +115,7 @@ To run the simulation follow the steps below:
 1. Run the executable simulator. Depending on the platform used, the simulator executable is located in one of the folders `Linux|Windows|Mac`. This will load a simulation environment. As discussed, it includes two players and a ball. When the simulation is loaded, the control commands are ready to use. By default, the TCP control port for red player (player1) is set to 9001. 
 
 
-2. Run the BluePlayer (refer to BluePlayerREADME.txt for the instruction). It gives you two options. Either use the keyboard to control the blue player (player2) or select the random play in which the blue player will perform random play. Also, it is possible to use another application to control the blue player simply by sending the command to the corresponding port.
+2. Run the BluePlayer (refer to BluePlayerREADME.txt for the instruction). It gives you two options. Either use the keyboard to control the blue player (player1) or select the random play in which the blue player will perform random play. Also, it is possible to use another application to control the blue player simply by sending the command to the corresponding port.
 
 3. Now everything is ready to use, and you can start modeling your control. 
 
