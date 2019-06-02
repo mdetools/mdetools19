@@ -5,7 +5,7 @@ slide_id: 4
 
 
 ## Overview of the Challenge Problem
-We have created a simulation of a simplified RoboCup-type game inspired by [https://ssim.robocup.org/](https://ssim.robocup.org/) as shown in the following figure. The simulation contains a `ball` and two players  `red (player2)` and `blue (player1)` who compete against each other. By default, the `blue` player can be controlled by the keyboard or by the simulation where its movements are random. The challenge consists of creating a model to control the `red` player. The objective of each player is to shoot as many goals as possible. Note that the coordinates of the field are shown in the corners of the figure.
+We have created a simulation (Ref. [SimGen](https://github.com/PasternakMichal/SimGen)) of a simplified RoboCup-type game inspired by [https://ssim.robocup.org/](https://ssim.robocup.org/) as shown in the following figure. The simulation contains a `ball` and two players  `red (player2)` and `blue (player1)` who compete against each other. By default, the `blue` player can be controlled by the keyboard or by the simulation where its movements are random. The challenge consists of creating a model to control the `red` player. The objective of each player is to shoot as many goals as possible. Note that the coordinates of the field are shown in the corners of the figure.
 
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img  align="middle" src="assets/images/robosoccer.png" style="width: 500px;"/>
