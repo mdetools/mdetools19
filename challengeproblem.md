@@ -73,7 +73,7 @@ The only prerequisite for using the simulator is Java 1.7.0_80 or higher. Please
 The simulation package is available for three platforms (Mac, Windows, Linux). To download, please use the following link:
 
 
-[Simulation Package](https://drive.google.com/open?id=1JK-zlulIeGXPwfDfDF4E9YUEnLKRVIZh)
+[Simulation Package](https://drive.google.com/file/d/1ArTdaXxzRkDKdbaeroi2NtVLxPZRFrah)
 
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files.
@@ -143,6 +143,6 @@ The simulation enforces the game rules. Thus playing with the blue player in def
 
 
 ## How to ask for additional help?
-Users encountering technical difficulties during the use of the simulator can open a new issue at [https://github.com/mdetools/mdetools19/issues](https://github.com/mdetools/mdetools18/issues).
+Users encountering technical difficulties during the use of the simulator can open a new issue at [https://github.com/mdetools/mdetools19/issues](https://github.com/mdetools/mdetools19/issues).
 
 
