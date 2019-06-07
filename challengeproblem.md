@@ -22,7 +22,7 @@ We have created a simulation (Ref. [SimGen](https://github.com/PasternakMichal/S
 
 ### Communication Flow
 
-As illustrated in the following figure, commands can be invoked by sending the corresponding message using TCP connections to the tcp ports. To control red player (player2), the player2 port (9004) should be used. Note that the command for getting the ball's position (`ball,GPs()`) can be sent in both ports. The port numbers can be configured using the configuration file as will be discussed later.
+As illustrated in the following figure, commands can be invoked by sending the corresponding message using TCP connections to the tcp ports. To control red player (player2), the player2 port (9003) should be used. Note that the command for getting the ball's position (`ball,GPs()`) can be sent in both ports. The port numbers can be configured using the configuration file as will be discussed later.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img  align="middle" src="assets/images/simulation-structure.png" style="width:300px;"/>
 
