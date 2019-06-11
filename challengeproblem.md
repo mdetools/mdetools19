@@ -73,7 +73,7 @@ The only prerequisite for using the simulator is Java 1.7.0_80 or higher. Please
 The simulation package is available for three platforms (Mac, Windows, Linux). To download, please use the following link:
 
 
-[Simulation Package](https://drive.google.com/file/d/1AnYDKY6Jk5mjl0Ah5uhpb4PIFRASgVvY)
+[Simulation Package](https://drive.google.com/open?id=19H0Q3uODNEe_02stA2rqPRvHKGLnzi3Q)
 
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files.
