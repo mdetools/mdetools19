@@ -127,7 +127,7 @@ To run the simulation follow the steps below:
 for more information. If you cannot find an answer, open a new issue. 
 
 ## Configuration
-The simulation can be configured using the parameters inside the `Setting.txt`. You may need to change this configuration in special cases such as changing TCP ports. The main configuration and their default value are described below.
+The simulation can be configured using the parameters inside the `GameSettings.txt`. You may need to change this configuration in special cases such as changing TCP ports. The main configuration and their default value are described below.
 
 {:.mbtablestyle}
 |Parameter &nbsp;            | Default Value &nbsp; | Description &nbsp; | Hints
