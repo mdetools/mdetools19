@@ -88,13 +88,9 @@ Note that depending on your platform, only one of the three folders Linux, Mac, 
 │   └── SocketCommunicator.java
 ├── BluePlayerREADME.txt
 ├── Linux
-│   ├── linux_universal
+│   ├── linux
 │   │   ├── linux_universal.x86       ---> Executable simulator for Linux x86
 │   │   ├── linux_universal.x86_64    ---> Executable simulator for Linux x86_64
-│   ├── linux_x86
-│   │   ├── linux_x86.x86              ---> Executable simulator for Linux x86
-│   └── linux_x86_64
-│       ├── linux_x86_64.x86_64        ---> Executable simulator for Linux x86
 ├── RedPlayer                      ---> A sample source code of a java program for the red player
 │   ├── PlayerController.java
 │   └── SocketCommunicator.java
@@ -117,9 +113,16 @@ To run the simulation follow the steps below:
 
 2. Run the BluePlayer (refer to BluePlayerREADME.txt for the instruction). It gives you two options. Either use the keyboard to control the blue player (player1) or select the random play in which the blue player will perform random play. Also, it is possible to use another application to control the blue player simply by sending the command to the corresponding port.
 
-3. Now everything is ready to use, and you can start modeling your control. 
+3. If you wish, you may listen to Game updates on the referee port, it is a port you may connect to, to get game updates such as ball possession, player time out, a player scoring and the end of the game.
+   The message formats are as follows:
+    - Ball Posession: "Possesion;<player_name>;"
+    - Time Out: "TimeOut;<player_name>;"
+    - Player scoring: "scored;<player_name>;<player_score>;"
+    - End of game: "Done;"
 
-4. If you encounter problems during any of these steps, please check the
+4. Now everything is ready to use, and you can start modeling your control. 
+
+5. If you encounter problems during any of these steps, please check the
 <a href="https://github.com/mdetools/mdetools19/issues">issue tracker</a>
 for more information. If you cannot find an answer, open a new issue. 
 
@@ -131,6 +134,7 @@ The simulation can be configured using the parameters inside the `Setting.txt`. 
 -----------------------| --------------       |-------------
 player1Port|9001|TCP port to control player1 | None
 player2Port|9003|TCP port to control player2 | None
+refereePort|9007|TCP port that notifies users of events (ball posession,timeout etc.)|None
 simulationIP|127.0.0.1|IP address that the simulation and the UnityObserver are running on | None
 gameTime|240s|Total execution time of the simulation in seconds | None
 possessionTimer|10s|The maximum time in seconds that a player can hold the ball with suction| None
