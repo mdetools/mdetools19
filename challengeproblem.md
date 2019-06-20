@@ -134,7 +134,7 @@ The simulation can be configured using the parameters inside the `GameSettings.t
 -----------------------| --------------       |-------------
 player1Port|9001|TCP port to control player1 | None
 player2Port|9003|TCP port to control player2 | None
-refereePort|9007|TCP port that notifies users of events (ball posession,timeout etc.)|None
+refereePort|9007|TCP port that notifies users of events (ball posession,timeout etc.) | None
 simulationIP|127.0.0.1|IP address that the simulation and the UnityObserver are running on | None
 gameTime|240s|Total execution time of the simulation in seconds | None
 possessionTimer|10s|The maximum time in seconds that a player can hold the ball with suction| None
