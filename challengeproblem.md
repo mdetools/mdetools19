@@ -75,6 +75,8 @@ The simulation package is available for three platforms (Mac, Windows, Linux). T
 
 [Simulation Package](https://drive.google.com/open?id=1NqjMnmhQvPsZ3WuYBYdzhqqNeIEwFwSU)
 
+[Performance Improved Simulation Package](https://drive.google.com/open?id=1RqHzyXrGdVKLyjjb4TqQTQd_gD9HoEIk)
+
 ### Running the simulation
 The simulation package is a compressed zip file which contains the following folders and files.
 Note that depending on your platform, only one of the three folders Linux, Mac, and Windows is included.
