@@ -60,8 +60,8 @@ deadlines:
     timezone: (AoE)
     text: Abstract submission deadline
     pass_due: False
-  - date: July 7, 2019 (Extended)
-    timezone: (AoE)
+  - date: July 7, 2019 
+    timezone: (Extended) (AoE)
     text: Submission deadline
     pass_due: False
   - date:   July 26, 2019
