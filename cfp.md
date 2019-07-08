@@ -70,9 +70,7 @@ workshop page). </li>
 
 </ol>
 
-## Important Dates.
-Submission deadline: TBD.   
-Author notification: TBD.
+
 
 ## Submission website
 Papers must be submitted electronically through [Eeaychair website](https://easychair.org/my/conference?conf=mdetools2019).
