@@ -2,7 +2,7 @@
 layout: page
 slide_id: 4
 ---
-# Keynote: Envisioning Future Language Workbenches by Markus Voelter
+# Keynote: Markus Voelter - Envisioning Future Language Workbenches
 
 Over the last couple of years, I have used MPS successfully to build
 interesting (modeling and programming) languages in a wide variety of
@@ -18,7 +18,7 @@ future; I will outline challenges, opportunities and research problems.
 I hope to spawn discussions for the remainder of the workshop.
 
 
-Markus works as a language engineer, bridging the gap from industry and business domains to software systems. He analyses domains, designs user-friendly languages and supporting analyses, and implements language tools and IDEs, architects efficient and reliable backends based on interpreters and generators. He also works on formalisms and meta-tools for language engineering. Reach him via http://voelter.de.
+Biography: Markus works as a language engineer, bridging the gap from industry and business domains to software systems. He analyses domains, designs user-friendly languages and supporting analyses, and implements language tools and IDEs, architects efficient and reliable backends based on interpreters and generators. He also works on formalisms and meta-tools for language engineering. Reach him via http://voelter.de.
 
 
 
