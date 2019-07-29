@@ -35,6 +35,10 @@ navbar:
     label: Submission
     path: ./submission.html
     visible: False
+ - id: 3
+    label: Accepted Papers
+    path: ./papers.html
+    visible: True
   - id: 4
     label: Program
     path: ./program.html
@@ -54,10 +58,6 @@ navbar:
   - id: 8
     label: Previous editions
     path: ./previousversions.html
-    visible: True
-  - id: 3
-    label: Accepted Papers
-    path: ./papers.html
     visible: True
 deadlines:
   - date: June 28, 2019
