@@ -3,7 +3,9 @@ layout: page
 slide_id: 10
 ---
 
-
+## List of accepted papers
+ 
+ 
 [A case study of model-driven engineering for automated timetabling information on submission.]()   
 Clement Eke, Antonio Garcia-Dominguez, Jort van Mourik and Ifti Khan.
 
