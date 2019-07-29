@@ -11,7 +11,7 @@ Clement Eke, Antonio Garcia-Dominguez, Jort van Mourik and Ifti Khan
 
 
 [A Model Checkable UML Soccer Player]()  
-Valentin Besnard, Matthias Brun, Philippe Dhaussy, Frédéric Jouault and Ciprian Teodorov.
+Valentin Besnard, Matthias Brun, Philippe Dhaussy, Frédéric Jouault and Ciprian Teodorov
 
 [Solving the RoboSoccer challenge problem with UML-RT and Papyrus-RT]()  
 Majid Babaei, Karim Jahed and Juergen Dingel
