@@ -55,6 +55,10 @@ navbar:
     label: Previous editions
     path: ./previousversions.html
     visible: True
+  - id: 10
+    label: Accepted Papers
+    path: ./papers.html
+    visible: True
 deadlines:
   - date: June 28, 2019
     timezone: (AoE)
