@@ -1,6 +1,6 @@
 ---
 layout: page
-slide_id: 10
+slide_id: 3
 ---
 
 ## List of accepted papers
