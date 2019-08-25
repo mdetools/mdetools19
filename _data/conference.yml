@@ -41,7 +41,7 @@ navbar:
     visible: True
   - id: 4
     label: Program
-    path: ./program9.html
+    path: ./program.html
     visible: True
   - id: 5
     label: Venue
