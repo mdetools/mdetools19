@@ -21,7 +21,9 @@ slide_id: 4
 <strong>16:00 - 16:20 </strong> &nbsp;  | <strong>Research papers 2 </strong> ([Speaker instructions](#speakerinstruction)) <br/> <medium> &#x2219; Thomas Weber, Heinrich Hussmann and Alois Zoitl.  </medium> <br /> [ Usability of Development Tools: A CASE-Study]()| 
 <strong>16:20 - 17:30 </strong> &nbsp;  | <strong>Session: Panel and discussion</strong> <br/> <medium> &#x2219; Betty H.C. Cheng (Michigan State University, USA), Hans Vangheluwe (University of Antwerp, Belgium), Markus Voelter (Independent consultant, Germany), Thomas Weigert (UniqueSoft, USA)  </medium> <br /> [MDE and its tools: who and where are we, and where are we going?]()| 
   
-  
+<br />
+<br /> 
+
 ## Speaker instructions
 ### <a name="speakerinstruction"></a>
 ### RESEARCH PAPERS (11:00-12:30 and 16:00-16:20) 
