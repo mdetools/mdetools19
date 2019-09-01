@@ -20,3 +20,35 @@ slide_id: 4
 <strong>15:30 - 16:00 </strong> &nbsp; &nbsp; &nbsp;          | <strong>Coffee break</strong> | 
 <strong>16:00 - 16:20 </strong> &nbsp;  | <strong>Research papers 2 </strong> <br/> <medium> &#x2219; Thomas Weber, Heinrich Hussmann and Alois Zoitl.  </medium> <br /> [ Usability of Development Tools: A CASE-Study]()| 
 <strong>16:20 - 17:30 </strong> &nbsp;  | <strong>Session: Panel and discussion</strong> <br/> <medium> &#x2219; Betty H.C. Cheng (Michigan State University, USA), Hans Vangheluwe (University of Antwerp, Belgium), Markus Voelter (Independent consultant, Germany), Thomas Weigert (UniqueSoft, USA)  </medium> <br /> [MDE and its tools: who and where are we, and where are we going?]()| 
+  
+  
+## Speaker instructions
+### <a name="speakerinstruction"></a>
+### RESEARCH PAPERS (11:00-12:30 and 16:00-16:20) 
+We kindly ask that each presenter prepare for 15 minutes of presentation
+time followed by 5 minutes of questions and answers. Time permitting,
+there will be a general discussion at the end of the 11:00-12:30 session
+covering all papers presented in that session.
+
+### CHALLENGE PROBLEM SUBMISSIONS (14:50 to 15:30)
+The session will contain 3 presentations. It will start with a very brief
+description of the challenge problem by the organizers, so that this
+information does not need to be repeated in subsequent presentations.
+Presenters should
+* keep their presentation to 8 minutes,
+* not use more than 5 slides (including title slide),
+* cover the following contents: 
+  * Description of model (2 slides): 
+Structure, behaviour, distinguishing features, and limitations 
+  * Description of use of tool (2 slides): 
+Features and capabilities that proved useful/not so useful 
+for addressing the challenge; pros, cons, and limitations 
+  * Relevant observations, insights, conclusions, recommendations (1 slide): 
+Please use as you see fit. Questions that could be addressed include:
+Was the problem a good fit for the tool? Is there anything that you would
+have liked to change about the problem? Did the problem help you learn
+something new about the tool?
+
+A joint discussion, covering all submissions, will conclude the session.
+Presenters are encouraged to be prepared for demos during, e.g., coffee
+breaks, or after the workshop.
