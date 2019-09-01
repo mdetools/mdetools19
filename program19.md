@@ -38,7 +38,7 @@ description of the challenge problem by the organizers, so that this
 information does not need to be repeated in subsequent presentations.
 Presenters should
 * keep their presentation to 8 minutes,
-* not use more than 5 slides (including title slide),
+* not use more than 6 slides (including title slide),
 * cover the following contents: 
   * Description of model (2 slides): 
 Structure, behaviour, distinguishing features, and limitations 
