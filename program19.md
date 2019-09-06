@@ -25,6 +25,9 @@ slide_id: 4
 <br /> 
 
 ## Speaker instructions
+<span style="color:red">All presenters should note that the available projectors only support presentations in 4:3 format</span>
+
+
 ### <a name="speakerinstruction"></a>
 ### RESEARCH PAPERS (11:00-12:30 and 16:00-16:20) 
 We kindly ask that each presenter prepare for 15 minutes of presentation
