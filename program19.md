@@ -25,7 +25,7 @@ slide_id: 4
 <br /> 
 
 ## Speaker instructions
-<span style="color:red">All presenters should note that the available projectors only support presentations in 4:3 format</span>
+<span style="color:red">All presenters should note that the available projectors only support presentations in 4:3 format.</span>
 
 
 ### <a name="speakerinstruction"></a>
