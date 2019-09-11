@@ -28,13 +28,13 @@ slide_id: 4
 
 
 ### <a name="speakerinstruction"></a>
-##### RESEARCH PAPERS (11:00-12:30 and 16:00-16:20) 
+##### Research papers (11:00-12:30 and 16:00-16:20) 
 We kindly ask that each presenter prepare for 15 minutes of presentation
 time followed by 5 minutes of questions and answers. Time permitting,
 there will be a general discussion at the end of the 11:00-12:30 session
 covering all papers presented in that session.
 
-##### CHALLENGE PROBLEM SUBMISSIONS (14:50 to 15:30)
+##### Challenge problem (14:50 to 15:30)
 The session will contain 3 presentations. It will start with a very brief
 description of the challenge problem by the organizers, so that this
 information does not need to be repeated in subsequent presentations.
